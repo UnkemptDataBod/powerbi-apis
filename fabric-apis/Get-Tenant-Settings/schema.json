@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "tenantSettings": {
+      "type": "array",
+      "items": {
+        "required": [
+          "settingName",
+          "title",
+          "enabled",
+          "canSpecifySecurityGroups",
+          "tenantSettingGroup"
+        ],
+        "properties": {
+          "settingName": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "canSpecifySecurityGroups": {
+            "type": "boolean"
+          },
+          "enabledSecurityGroups": {
+            "type": "array",
+            "items": {
+              "required": [
+                "graphId",
+                "name"
+              ],
+              "properties": {
+                "graphId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "tenantSettingGroup": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "tenantSettings"
+  ]
+}
