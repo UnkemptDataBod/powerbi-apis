@@ -1,0 +1,843 @@
+{
+  "tenantSettings": [
+    {
+      "settingName": "AllowServicePrincipalsUseReadAdminAPIs",
+      "title": "Allow service principals to use read-only admin APIs",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Admin API settings"
+    },
+    {
+      "settingName": "AdminApisIncludeDetailedMetadata",
+      "title": "Enhance admin APIs responses with detailed metadata",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Admin API settings"
+    },
+    {
+      "settingName": "AdminApisIncludeExpressions",
+      "title": "Enhance admin APIs responses with DAX and mashup expressions",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Admin API settings"
+    },
+    {
+      "settingName": "AllowAccessOverPrivateLinks",
+      "title": "Azure Private Link",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Advanced networking"
+    },
+    {
+      "settingName": "BlockAccessFromPublicNetworks",
+      "title": "Block Public Internet Access",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Advanced networking"
+    },
+    {
+      "settingName": "UsageMetrics",
+      "title": "Usage metrics for content creators",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Audit and usage settings"
+    },
+    {
+      "settingName": "UsageMetricsTrackUserLevelInfo",
+      "title": "Per-user data in usage metrics for content creators",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Audit and usage settings"
+    },
+    {
+      "settingName": "LogAnalyticsAttachForWorkspaceAdmins",
+      "title": "Azure Log Analytics connections for workspace administrators",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Audit and usage settings"
+    },
+    {
+      "settingName": "AutomatedInsightsTenant",
+      "title": "Receive notifications for top insights (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Insights settings"
+    },
+    {
+      "settingName": "AutomatedInsightsEntryPoints",
+      "title": "Show entry points for insights (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Insights settings"
+    },
+    {
+      "settingName": "CDSAManagement",
+      "title": "Create and use Gen1 dataflows",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Gen1 dataflow settings"
+    },
+    {
+      "settingName": "TemplatePublish",
+      "title": "Create template organizational content packs and apps",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Content pack and app settings"
+    },
+    {
+      "settingName": "AppPush",
+      "title": "Push apps to end users",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Content pack and app settings"
+    },
+    {
+      "settingName": "PublishContentPack",
+      "title": "Publish content packs and apps to the entire organization",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Content pack and app settings"
+    },
+    {
+      "settingName": "CustomVisualsTenant",
+      "title": "Allow visuals created using the Power BI SDK",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Power BI visuals"
+    },
+    {
+      "settingName": "CertifiedCustomVisualsTenant",
+      "title": "Add and use certified visuals only (block uncertified)",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Power BI visuals"
+    },
+    {
+      "settingName": "AllowCVToExportDataToFileTenant",
+      "title": "Allow downloads from custom visuals",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Power BI visuals"
+    },
+    {
+      "settingName": "WebContentTilesTenant",
+      "title": "Web content on dashboard tiles",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Dashboard settings"
+    },
+    {
+      "settingName": "DatamartTenant",
+      "title": "Create Datamarts (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Datamart settings"
+    },
+    {
+      "settingName": "WebModelingTenantSwitch",
+      "title": "Users can edit data models in the Power BI service (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Data model settings"
+    },
+    {
+      "settingName": "BlockAutoDiscoverAndPackageRefresh",
+      "title": "Block republish and disable package refresh",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Semantic Model Security"
+    },
+    {
+      "settingName": "Embedding",
+      "title": "Embed content in apps",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Developer settings"
+    },
+    {
+      "settingName": "ServicePrincipalAccess",
+      "title": "Allow service principals to use Power BI APIs",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Developer settings"
+    },
+    {
+      "settingName": "AllowServicePrincipalsCreateAndUseProfiles",
+      "title": "Allow service principals to create and use profiles",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Developer settings"
+    },
+    {
+      "settingName": "BlockResourceKeyAuthentication",
+      "title": "Block ResourceKey Authentication",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Developer settings"
+    },
+    {
+      "settingName": "DiscoverDatasetsSettingsPromoted",
+      "title": "Make promoted content discoverable",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Discovery settings"
+    },
+    {
+      "settingName": "DiscoverDatasetsSettingsCertified",
+      "title": "Make certified content discoverable ",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Discovery settings"
+    },
+    {
+      "settingName": "DiscoverDatasetsConsumption",
+      "title": "Discover content",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Discovery settings"
+    },
+    {
+      "settingName": "AllowGuestUserToAccessSharedContent",
+      "title": "Allow Azure Active Directory guest users to access Microsoft Fabric",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "enabledSecurityGroups": [
+        {
+          "graphId": "f4adce55-dcd2-4c9c-833a-754c5d12ef3f",
+          "name": "MySuperSpecialSecurityGroup"
+        }
+      ],
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExternalSharingV2",
+      "title": "Invite external users to your organization",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ElevatedGuestsTenant",
+      "title": "Allow Azure Active Directory guest users to edit and manage content in the organization",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "AllowGuestLookup",
+      "title": "Show Azure Active Directory guests in lists of suggested people",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "PublishToWeb",
+      "title": "Publish to web",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings",
+      "properties": [
+        {
+          "name": "CreateP2w",
+          "value": "false",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "settingName": "ExportVisualImageTenant",
+      "title": "Copy and paste visuals",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExportToExcelSetting",
+      "title": "Export to Excel",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExportToCsv",
+      "title": "Export to .csv",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExportReport",
+      "title": "Download reports",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "LiveConnection",
+      "title": "Users can work with semantic models in Excel using a live connection",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExportToPowerPoint",
+      "title": "Export reports as PowerPoint presentations or PDF documents",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "excludedSecurityGroups": [
+        {
+          "graphId": "f4adce55-dcd2-4c9c-833a-754c5d12ef3f",
+          "name": "MySuperSpecialSecurityGroup"
+        }
+      ],
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExportToMHTML",
+      "title": "Export reports as MHTML documents",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExportToWord",
+      "title": "Export reports as Word documents",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExportToXML",
+      "title": "Export reports as XML documents",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExportToImage",
+      "title": "Export reports as image files",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "Printing",
+      "title": "Print dashboards and reports",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "CertifyDatasets",
+      "title": "Certification",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings",
+      "properties": [
+        {
+          "name": "CertificationDocumentationUrl",
+          "value": "",
+          "type": "Url"
+        }
+      ]
+    },
+    {
+      "settingName": "EmailSubscriptionTenant",
+      "title": "Users can set up email subscriptions",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "EmailSubscriptionsToB2BUsers",
+      "title": "B2B guest users can set up and be subscribed to email subscriptions",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "EmailSubscriptionsToExternalUsers",
+      "title": "Users can send email subscriptions to external users",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "PromoteContent",
+      "title": "Featured content",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "EnableExcelYellowIntegration",
+      "title": "Allow connections to featured tables",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ShareLinkToEntireOrg",
+      "title": "Allow shareable links to grant access to everyone in your organization",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ShareToTeamsTenant",
+      "title": "Enable Microsoft Teams integration",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "AutoInstallPowerBIAppInTeamsTenant",
+      "title": "Install Power BI app for Microsoft Teams automatically",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "StorytellingTenant",
+      "title": "Enable Power BI add-in for PowerPoint",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "AllowPowerBIASDQOnTenant",
+      "title": "Allow DirectQuery connections to Power BI semantic models",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "ExternalDatasetSharingTenant",
+      "title": "Guest users can work with shared semantic models in their own tenants",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "EnableDatasetInPlaceSharing",
+      "title": "Allow specific users to turn on external data sharing",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Export and sharing settings"
+    },
+    {
+      "settingName": "GitIntegrationTenantSwitch",
+      "title": "Users can synchronize workspace items with their Git repositories (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Git integration"
+    },
+    {
+      "settingName": "GitIntegrationCrossGeoTenantSwitch",
+      "title": "Users can export items to Git repositories in other geographical locations (preview)",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Git integration"
+    },
+    {
+      "settingName": "GitIntegrationSensitivityLabelsTenantSwitch",
+      "title": "Users can export workspace items with applied sensitivity labels to Git repositories (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Git integration"
+    },
+    {
+      "settingName": "PowerBIGoalsTenant",
+      "title": "Create and use Metrics",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Metrics settings"
+    },
+    {
+      "settingName": "TenantSettingPublishGetHelpInfo",
+      "title": "Publish \"Get Help\" information",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Help and support settings",
+      "properties": [
+        {
+          "name": "TrainingDocumentation",
+          "value": "",
+          "type": "Url"
+        },
+        {
+          "name": "DiscussionForum",
+          "value": "",
+          "type": "Url"
+        },
+        {
+          "name": "LicensingRequests",
+          "value": "",
+          "type": "Url"
+        },
+        {
+          "name": "HelpDesk",
+          "value": "",
+          "type": "Url"
+        }
+      ]
+    },
+    {
+      "settingName": "EmailSecurityGroupsOnOutage",
+      "title": "Receive email notifications for service outages or incidents",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Help and support settings",
+      "properties": [
+        {
+          "name": "EmailList",
+          "value": "",
+          "type": "MailEnabledSecurityGroup"
+        }
+      ]
+    },
+    {
+      "settingName": "AllowFreeTrial",
+      "title": "Users can try Microsoft Fabric paid features",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Help and support settings"
+    },
+    {
+      "settingName": "AdminCustomDisclaimer",
+      "title": "Show a custom message before publishing reports",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Help and support settings",
+      "properties": [
+        {
+          "name": "AdminCustomDisclaimer",
+          "value": "",
+          "type": "Freetext"
+        }
+      ]
+    },
+    {
+      "settingName": "EimInformationProtectionEdit",
+      "title": "Allow users to apply sensitivity labels for content",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Information protection"
+    },
+    {
+      "settingName": "EimInformationProtectionDataSourceInheritanceSetting",
+      "title": "Apply sensitivity labels from data sources to their data in Power BI",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Information protection"
+    },
+    {
+      "settingName": "EimInformationProtectionDownstreamInheritanceSetting",
+      "title": "Automatically apply sensitivity labels to downstream content",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Information protection"
+    },
+    {
+      "settingName": "EimInformationProtectionWorkspaceAdminsOverrideAutomaticLabelsSetting",
+      "title": "Allow workspace admins to override automatically applied sensitivity labels",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Information protection"
+    },
+    {
+      "settingName": "BlockProtectedLabelSharingToEntireOrg",
+      "title": "Restrict content with protected labels from being shared via link with everyone in your organization",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Information protection"
+    },
+    {
+      "settingName": "OnPremAnalyzeInExcel",
+      "title": "Allow XMLA endpoints and Analyze in Excel with on-premises semantic models",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "DatasetExecuteQueries",
+      "title": "Semantic Model Execute Queries REST API",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "EsriVisual",
+      "title": "Use ArcGIS Maps for Power BI",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "ArtifactSearchTenant",
+      "title": "Use global search for Power BI",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "AzureMap",
+      "title": "Use Azure Maps visual",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "BingMap",
+      "title": "Map and filled map visuals",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "VisualizeListInPowerBI",
+      "title": "Integration with SharePoint and Microsoft Lists",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "DremioSSO",
+      "title": "Dremio SSO",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "SnowflakeSSO",
+      "title": "Snowflake SSO",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "RedshiftSSO",
+      "title": "Redshift SSO",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "GoogleBigQuerySSO",
+      "title": "Google BigQuery SSO",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "OracleSSO",
+      "title": "Oracle SSO",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "AADSSOForGateway",
+      "title": "Azure AD Single Sign-On (SSO) for Gateway",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "PowerPlatformSolutionsIntegrationTenant",
+      "title": "Power Platform Solutions Integration (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "OneDriveSharePointViewerIntegrationTenantSettingV2",
+      "title": "Users can view Power BI files saved in OneDrive and SharePoint (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "OneDriveSharePointAllowSharingTenantSetting",
+      "title": "Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "ASShareableCloudConnectionBindingSecurityModeTenant",
+      "title": "Enable granular access control for all data connections",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "ASWritethruContinuousExportTenantSwitch",
+      "title": "Semantic models can export data to OneLake (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "ASWritethruTenantSwitch",
+      "title": "Users can store semantic model tables in OneLake (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "ODSPRefreshEnforcementTenantAllowAutomaticUpdate",
+      "title": "Semantic model owners can choose to automatically update semantic models from files imported from OneDrive or SharePoint",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Integration settings"
+    },
+    {
+      "settingName": "M365DataSharing",
+      "title": "Users can see Microsoft Fabric metadata in Microsoft 365",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Share data with your Microsoft 365 services",
+      "properties": [
+        {
+          "name": "M365DataSharingAcrossGeos",
+          "value": "false",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "settingName": "TridentPrivatePreview",
+      "title": "Data Activator (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Microsoft Fabric"
+    },
+    {
+      "settingName": "FabricGAWorkloads",
+      "title": "Users can create Fabric items",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Microsoft Fabric"
+    },
+    {
+      "settingName": "OneLakeForThirdParty",
+      "title": "Users can access data stored in OneLake with apps external to Fabric",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "OneLake settings"
+    },
+    {
+      "settingName": "OneLakeFileExplorer",
+      "title": "Users can sync data in OneLake with the OneLake File Explorer app",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "OneLake settings"
+    },
+    {
+      "settingName": "QnaFeedbackLoop",
+      "title": "Review questions",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Q&A settings"
+    },
+    {
+      "settingName": "QnaLsdlSharing",
+      "title": "Synonym sharing",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Q&A settings"
+    },
+    {
+      "settingName": "EnableNLToDax",
+      "title": "Allow quick measure suggestions (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Quick measure suggestions"
+    },
+    {
+      "settingName": "AllowSendNLToDaxDataToOtherRegions",
+      "title": "Allow user data to leave their geography",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Quick measure suggestions"
+    },
+    {
+      "settingName": "RScriptVisual",
+      "title": "Interact with and share R and Python visuals",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "R and Python visuals settings"
+    },
+    {
+      "settingName": "QueryScaleOutTenant",
+      "title": "Scale out queries for large semantic models (preview)",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Scale-out settings"
+    },
+    {
+      "settingName": "DevelopServiceApps",
+      "title": "Publish template apps",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Template app settings"
+    },
+    {
+      "settingName": "InstallServiceApps",
+      "title": "Install template apps",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Template app settings"
+    },
+    {
+      "settingName": "InstallNonvalidatedTemplateApps",
+      "title": "Install template apps not listed in AppSource",
+      "enabled": false,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Template app settings"
+    },
+    {
+      "settingName": "ExpFlightingTenant",
+      "title": "Help Power BI optimize your experience",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "User experience experiments"
+    },
+    {
+      "settingName": "CreateAppWorkspaces",
+      "title": "Create workspaces (new workspace experience)",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Workspace settings"
+    },
+    {
+      "settingName": "UseDatasetsAcrossWorkspaces",
+      "title": "Use semantic models across workspaces",
+      "enabled": true,
+      "canSpecifySecurityGroups": true,
+      "tenantSettingGroup": "Workspace settings"
+    },
+    {
+      "settingName": "RestrictMyFolderCapacity",
+      "title": "Block users from reassigning personal workspaces (My Workspace)",
+      "enabled": false,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Workspace settings"
+    },
+    {
+      "settingName": "ConfigureFolderRetentionPeriod",
+      "title": "Define workspace retention period",
+      "enabled": true,
+      "canSpecifySecurityGroups": false,
+      "tenantSettingGroup": "Workspace settings",
+      "properties": [
+        {
+          "name": "FolderRetentionPeriod",
+          "value": "",
+          "type": "Integer"
+        }
+      ]
+    }
+  ]
+}
