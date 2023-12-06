@@ -1,0 +1,412 @@
+{
+  "@odata.context": "http://wabi-uk-south-redirect.analysis.windows.net/v1.0/myorg/admin/$metadata#groups",
+  "@odata.count": 7,
+  "value": [
+      {
+          "id": "861b6b4c-1c06-40f0-935c-40f3ea7c2f8a",
+          "isReadOnly": false,
+          "isOnDedicatedCapacity": true,
+          "capacityId": "b0368e84-da64-4785-b5b8-99ad8b6f0628",
+          "capacityMigrationStatus": "Migrated",
+          "defaultDatasetStorageFormat": "Small",
+          "type": "Workspace",
+          "state": "Active",
+          "hasWorkspaceLevelSettings ": false,
+          "name": "Gardening",
+          "users": [
+              {
+                  "emailAddress": "user1.surname@domain.com",
+                  "groupUserAccessRight": "Admin",
+                  "displayName": "user1 surname",
+                  "identifier": "user1.surname@domain.com",
+                  "principalType": "User"
+              },
+              {
+                  "emailAddress": "gardening@domain.com",
+                  "groupUserAccessRight": "Member",
+                  "displayName": "Gardening",
+                  "identifier": "8362bb30-12f5-43fb-9723-40916a0fcccf",
+                  "principalType": "Group"
+              }
+          ],
+          "reports": [
+              {
+                  "id": "b2234ac3-5d69-4ef8-b854-365cb8d32ad8",
+                  "reportType": "PowerBIReport",
+                  "name": "Seed Germination",
+                  "datasetId": "7de08572-f19c-4828-b8f2-ad3652624c39",
+                  "users": [],
+                  "subscriptions": []
+              }
+          ],
+          "dashboards": [
+              {
+                  "id": "db7462c7-37d4-4669-8a10-94d1f5687b6d",
+                  "displayName": "test qa",
+                  "isReadOnly": false,
+                  "users": [],
+                  "subscriptions": []
+              },
+              {
+                  "id": "838024de-43be-486c-8d2a-47c736253351",
+                  "displayName": "Sample Dashboard",
+                  "isReadOnly": false,
+                  "users": [],
+                  "subscriptions": []
+              }
+          ],
+          "datasets": [
+              {
+                  "id": "a27fa799-bc92-4aec-a9bc-01d900c75fb8",
+                  "name": "Seed Germination",
+                  "addRowsAPIEnabled": false,
+                  "configuredBy": "user1.surname@domain.com",
+                  "isRefreshable": true,
+                  "isEffectiveIdentityRequired": false,
+                  "isEffectiveIdentityRolesRequired": false,
+                  "targetStorageMode": "Abf",
+                  "createdDate": "2017-04-07T13:00:03.087Z",
+                  "contentProviderType": "Unknown",
+                  "upstreamDatasets": [],
+                  "users": [],
+                  "isInPlaceSharingEnabled": false
+              },
+              {
+                  "id": "63e016a4-7978-4c01-8203-7159bb51052a",
+                  "name": "downstream dataset",
+                  "addRowsAPIEnabled": false,
+                  "configuredBy": "user1.surname@domain.com",
+                  "isRefreshable": true,
+                  "isEffectiveIdentityRequired": false,
+                  "isEffectiveIdentityRolesRequired": false,
+                  "targetStorageMode": "Abf",
+                  "createdDate": "2023-12-06T22:26:18.287Z",
+                  "contentProviderType": "PbixInCompositeMode",
+                  "upstreamDatasets": [],
+                  "users": [],
+                  "isInPlaceSharingEnabled": false
+              }
+          ],
+          "dataflows": [
+              {
+                  "objectId": "c96b4bf0-483e-4dbf-8a6a-3b70b614ddc9",
+                  "name": "Sample Dataflow",
+                  "description": "",
+                  "configuredBy": "user1.surname@domain.com",
+                  "users": []
+              }
+          ],
+          "workbooks": [
+              {
+                  "name": "Meal Planner",
+                  "datasetId": ""
+              }
+          ]
+      },
+      {
+          "id": "45f0483e-b2d1-4b40-8b50-7e40ab8f8d62",
+          "isReadOnly": false,
+          "isOnDedicatedCapacity": false,
+          "capacityMigrationStatus": "",
+          "type": "Workspace",
+          "state": "Active",
+          "hasWorkspaceLevelSettings ": false,
+          "name": "SSRS Reporting",
+          "users": [
+              {
+                  "emailAddress": "user1.surname@domain.com",
+                  "groupUserAccessRight": "Admin",
+                  "displayName": "user1 surname",
+                  "identifier": "user1.surname@domain.com",
+                  "principalType": "User"
+              },
+              {
+                  "emailAddress": "ssrsreporting@domain.com",
+                  "groupUserAccessRight": "Member",
+                  "displayName": "SSRS Reporting",
+                  "identifier": "341f615b-070c-4a4e-8350-dd6dd50b1759",
+                  "principalType": "Group"
+              }
+          ],
+          "reports": [
+              {
+                  "id": "0ca9099b-f703-4579-9f4e-682ccd2f6f4d",
+                  "reportType": "PowerBIReport",
+                  "name": "Report executions by user",
+                  "datasetId": "aa6088f3-7e63-468a-9768-932aacde9df8",
+                  "users": [],
+                  "subscriptions": []
+              },
+              {
+                  "id": "9e297250-2326-4d02-ac84-82e73fe431db",
+                  "reportType": "PowerBIReport",
+                  "name": "Report Execution Statistics",
+                  "datasetId": "05ef0e07-6dcb-4f49-bd21-edd65d472f4d",
+                  "users": [],
+                  "subscriptions": []
+              }
+          ],
+          "dashboards": [
+              {
+                  "id": "744fbbf6-b748-450b-83cc-125963f306c1",
+                  "displayName": "Reporting Services",
+                  "isReadOnly": false,
+                  "users": [],
+                  "subscriptions": []
+              }
+          ],
+          "datasets": [
+              {
+                  "id": "0d8d762a-19ec-4c1d-95c5-d962e2dfaf75",
+                  "name": "Report executions by user",
+                  "addRowsAPIEnabled": false,
+                  "configuredBy": "user1.surname@domain.com",
+                  "isRefreshable": false,
+                  "isEffectiveIdentityRequired": false,
+                  "isEffectiveIdentityRolesRequired": false,
+                  "targetStorageMode": "Abf",
+                  "createdDate": "2017-04-07T07:56:58.897Z",
+                  "contentProviderType": "Unknown",
+                  "upstreamDatasets": [],
+                  "users": [],
+                  "isInPlaceSharingEnabled": false
+              },
+              {
+                  "id": "116043de-5f28-4e2e-9714-01fd8447473d",
+                  "name": "Report Execution Statistics",
+                  "addRowsAPIEnabled": false,
+                  "configuredBy": "user1.surname@domain.com",
+                  "isRefreshable": false,
+                  "isEffectiveIdentityRequired": false,
+                  "isEffectiveIdentityRolesRequired": false,
+                  "targetStorageMode": "Abf",
+                  "createdDate": "2017-04-07T09:26:55.097Z",
+                  "contentProviderType": "Unknown",
+                  "upstreamDatasets": [],
+                  "users": [],
+                  "isInPlaceSharingEnabled": false
+              }
+          ],
+          "dataflows": [],
+          "workbooks": []
+      },
+      {
+          "id": "0699377e-2fc9-438c-a4f5-62251f831f6f",
+          "isReadOnly": false,
+          "isOnDedicatedCapacity": false,
+          "capacityMigrationStatus": "",
+          "type": "Workspace",
+          "state": "Deleted",
+          "hasWorkspaceLevelSettings ": false,
+          "name": "Website",
+          "users": [],
+          "reports": [
+              {
+                  "id": "75e68894-dde4-44ca-b222-f8a746c11718",
+                  "reportType": "PowerBIReport",
+                  "name": "Google Analytics",
+                  "datasetId": "4dd654fd-bd41-4070-b5ea-8937775367ea",
+                  "users": [],
+                  "subscriptions": []
+              },
+              {
+                  "id": "26e8bcaa-23c7-4133-b5ea-a994ba427136",
+                  "reportType": "PowerBIReport",
+                  "name": "domain Main Site",
+                  "datasetId": "cd9341a1-6c00-459d-b192-a5f6d28e8f7e",
+                  "users": [],
+                  "subscriptions": []
+              },
+              {
+                  "id": "a013837e-aa7c-46e9-ae96-a749c082e0fc",
+                  "reportType": "PowerBIReport",
+                  "name": "website - Google Analytics",
+                  "datasetId": "e03132e3-996f-4d22-b43e-2bb8ffd690af",
+                  "users": [],
+                  "subscriptions": []
+              }
+          ],
+          "dashboards": [
+              {
+                  "id": "61346a96-7332-4b46-a3cb-a09bcfe4d1a5",
+                  "displayName": "Google Analytics",
+                  "isReadOnly": false,
+                  "users": [],
+                  "subscriptions": []
+              },
+              {
+                  "id": "af2e97d0-e2bd-4404-a023-5c509c75287d",
+                  "displayName": "website - Google Analytics",
+                  "isReadOnly": false,
+                  "users": [],
+                  "subscriptions": []
+              }
+          ],
+          "datasets": [
+              {
+                  "id": "c05a38cf-89d9-4e36-82b1-8b3069a1bd0f",
+                  "name": "Google Analytics",
+                  "addRowsAPIEnabled": false,
+                  "configuredBy": "user1.surname@domain.com",
+                  "isRefreshable": true,
+                  "isEffectiveIdentityRequired": false,
+                  "isEffectiveIdentityRolesRequired": false,
+                  "targetStorageMode": "Abf",
+                  "createdDate": "2017-04-07T16:03:55.353Z",
+                  "contentProviderType": "Unknown",
+                  "upstreamDatasets": [],
+                  "users": [],
+                  "isInPlaceSharingEnabled": false
+              },
+              {
+                  "id": "7c5e9267-2e79-4680-aac8-e599c5f7e9db",
+                  "name": "website - Google Analytics",
+                  "addRowsAPIEnabled": false,
+                  "configuredBy": "user1.surname@domain.com",
+                  "isRefreshable": true,
+                  "isEffectiveIdentityRequired": false,
+                  "isEffectiveIdentityRolesRequired": false,
+                  "targetStorageMode": "Abf",
+                  "createdDate": "2017-04-07T20:24:50.36Z",
+                  "contentProviderType": "Unknown",
+                  "upstreamDatasets": [],
+                  "users": [],
+                  "isInPlaceSharingEnabled": false
+              }
+          ],
+          "dataflows": [],
+          "workbooks": []
+      },
+      {
+          "id": "0763ef6e-1983-42be-87a0-f62819363a48",
+          "isReadOnly": false,
+          "isOnDedicatedCapacity": false,
+          "capacityMigrationStatus": "",
+          "type": "Workspace",
+          "state": "Active",
+          "hasWorkspaceLevelSettings ": false,
+          "name": "Drive Recording",
+          "users": [
+              {
+                  "emailAddress": "user1.surname@domain.com",
+                  "groupUserAccessRight": "Admin",
+                  "displayName": "user1 surname",
+                  "identifier": "user1.surname@domain.com",
+                  "principalType": "User"
+              },
+              {
+                  "emailAddress": "driverecording@domain.com",
+                  "groupUserAccessRight": "Member",
+                  "displayName": "Drive Recording",
+                  "identifier": "5c8e08da-42fd-4b84-84aa-27885d2e057f",
+                  "principalType": "Group"
+              }
+          ],
+          "reports": [
+              {
+                  "id": "9ca3c313-b438-4bf5-b0c3-310de2c9b445",
+                  "reportType": "PowerBIReport",
+                  "name": "Drive Log",
+                  "datasetId": "41b84c6c-ddff-4d1b-b1a4-f14f5f29de16",
+                  "users": [],
+                  "subscriptions": []
+              }
+          ],
+          "dashboards": [],
+          "datasets": [
+              {
+                  "id": "e94f64e5-8f23-4a17-9bac-e86389e67d91",
+                  "name": "Drive Log",
+                  "addRowsAPIEnabled": false,
+                  "configuredBy": "user1.surname@domain.com",
+                  "isRefreshable": true,
+                  "isEffectiveIdentityRequired": false,
+                  "isEffectiveIdentityRolesRequired": false,
+                  "targetStorageMode": "Abf",
+                  "createdDate": "2017-04-07T15:00:19.36Z",
+                  "contentProviderType": "Unknown",
+                  "upstreamDatasets": [],
+                  "users": [],
+                  "isInPlaceSharingEnabled": false
+              }
+          ],
+          "dataflows": [],
+          "workbooks": []
+      },
+      {
+          "id": "e7d410ab-bda0-4572-80b4-e57b2894f8d5",
+          "isReadOnly": false,
+          "isOnDedicatedCapacity": false,
+          "capacityMigrationStatus": "PendingMigration",
+          "type": "PersonalGroup",
+          "state": "Active",
+          "hasWorkspaceLevelSettings ": false,
+          "name": "My workspace",
+          "users": [
+              {
+                  "emailAddress": "user1.surname@domain.com",
+                  "groupUserAccessRight": "Admin",
+                  "displayName": "user1 surname",
+                  "identifier": "user1.surname@domain.com",
+                  "principalType": "User"
+              }
+          ],
+          "reports": [],
+          "dashboards": [],
+          "datasets": [],
+          "dataflows": [],
+          "workbooks": []
+      },
+      {
+          "id": "807e924e-895a-40f4-812c-5efdee0dcd31",
+          "isReadOnly": false,
+          "isOnDedicatedCapacity": false,
+          "capacityMigrationStatus": "PendingMigration",
+          "type": "PersonalGroup",
+          "state": "Active",
+          "hasWorkspaceLevelSettings ": false,
+          "name": "PersonalWorkspace user2 surname",
+          "users": [
+              {
+                  "emailAddress": "user2.surname@domain.com",
+                  "groupUserAccessRight": "Admin",
+                  "displayName": "user2 surname",
+                  "identifier": "user2.surname@domain.com",
+                  "principalType": "User"
+              }
+          ],
+          "reports": [],
+          "dashboards": [],
+          "datasets": [],
+          "dataflows": [],
+          "workbooks": []
+      },
+      {
+          "id": "672ec939-db12-44e7-862d-8752ca400ac6",
+          "isReadOnly": false,
+          "isOnDedicatedCapacity": true,
+          "capacityId": "d45c36fa-796d-4c15-bff6-3199dcb4f6a8",
+          "capacityMigrationStatus": "Migrated",
+          "defaultDatasetStorageFormat": "Large",
+          "description": "A workspace of great potential",
+          "type": "Workspace",
+          "state": "Active",
+          "hasWorkspaceLevelSettings ": false,
+          "name": "PPU Workspace",
+          "users": [
+              {
+                  "emailAddress": "user1.surname@domain.com",
+                  "groupUserAccessRight": "Admin",
+                  "displayName": "user1 surname",
+                  "identifier": "user1.surname@domain.com",
+                  "principalType": "User"
+              }
+          ],
+          "reports": [],
+          "dashboards": [],
+          "datasets": [],
+          "dataflows": [],
+          "workbooks": []
+      }
+  ]
+}

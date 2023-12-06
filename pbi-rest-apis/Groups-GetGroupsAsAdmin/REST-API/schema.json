@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@odata.context": {
+      "type": "string"
+    },
+    "@odata.count": {
+      "type": "number"
+    },
+    "value": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "isReadOnly": {
+            "type": "boolean"
+          },
+          "isOnDedicatedCapacity": {
+            "type": "boolean"
+          },
+          "capacityId": {
+            "type": "string"
+          },
+          "capacityMigrationStatus": {
+            "type": "string"
+          },
+          "defaultDatasetStorageFormat": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "hasWorkspaceLevelSettings ": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "users": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "emailAddress",
+                "groupUserAccessRight",
+                "displayName",
+                "identifier",
+                "principalType"
+              ],
+              "properties": {
+                "emailAddress": {
+                  "type": "string"
+                },
+                "groupUserAccessRight": {
+                  "type": "string"
+                },
+                "displayName": {
+                  "type": "string"
+                },
+                "identifier": {
+                  "type": "string"
+                },
+                "principalType": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "reports": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "dashboards": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "datasets": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "dataflows": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "workbooks": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "@odata.context",
+    "@odata.count",
+    "value"
+  ]
+}
