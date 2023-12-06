@@ -4,6 +4,13 @@ This is initially to provide a base for schema validation and as a reference for
 The Power BI APIs are not all that are required as the Power BI ecosystem extends beyond the REST APIs as documented [here](https://learn.microsoft.com/en-us/rest/api/power-bi/)
 
 # General
+## Rest API
+Have added a python script to call the apis, you will need to generate a bearer token though for the power bi service. 
+See https://learn.microsoft.com/en-us/rest/api/power-bi/
+
+If you want to *cheat* you can grab a bearer token from the 'try it' pane of the REST API docs
+See https://learn.microsoft.com/en-us/rest/api/power-bi/admin/groups-get-groups-as-admin#code-try-0
+
 ## Powershell cmdlet
 Have included the commands for powershell as it is implied [here](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-reference) that there is a parity between the cmdlets and the APIs however there are differences as highlighted in the Groups-GetGroupsAsAdmin [detail.md](/pbi-rest-apis/Groups-GetGroupsAsAdmin/detail.md) file.
 
