@@ -4,14 +4,17 @@ import json
 import requests
 
 # Define inputs
-outputpath = "scriptoutput/pbi-apis/Apps-GetAppsAsAdmin/"
+outputpath = "scriptoutput/pbi-apis/Apps-GetAppUserAsAdmin/"
 
 # Create local output directory if not exists
 if not os.path.exists(outputpath):  
     os.makedirs(outputpath) 
 
-url = 'https://api.powerbi.com/v1.0/myorg/admin/apps?%24top=10'
+appid = input("Enter appID:")
 
+url = 'https://api.powerbi.com/v1.0/myorg/admin/apps/' + str(appid) + '/users'
+
+print(url)
 
 bearer = username = input("Enter bearer:")
 
