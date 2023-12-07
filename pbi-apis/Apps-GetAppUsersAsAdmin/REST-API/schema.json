@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "@odata.context": {
+      "type": "string"
+    },
+    "value": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "required": [
+          "appUserAccessRight",
+          "emailAddress",
+          "displayName",
+          "identifier",
+          "graphId",
+          "principalType",
+          "userType"
+        ],
+        "properties": {
+          "appUserAccessRight": {
+            "type": "string"
+          },
+          "emailAddress": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "identifier": {
+            "type": "string"
+          },
+          "graphId": {
+            "type": "string"
+          },
+          "principalType": {
+            "type": "string"
+          },
+          "userType": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "@odata.context",
+    "value"
+  ]
+}

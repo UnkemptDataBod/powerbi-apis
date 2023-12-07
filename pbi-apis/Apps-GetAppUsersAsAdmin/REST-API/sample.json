@@ -1,0 +1,38 @@
+{
+  "@odata.context": "http://api.powerbi.com/v1.0/myorg/admin/$metadata#Collection(Microsoft.PowerBI.ServiceContracts.Api.Access.AppUser)",
+  "value": [
+    {
+      "appUserAccessRight": "All",
+      "emailAddress": "user1.surname@domain.com",
+      "displayName": "user1 surname",
+      "identifier": "user1.surname@domain.com",
+      "graphId": "26bfe0f7-b623-4a00-85c4-a2a40f0bee99",
+      "principalType": "User",
+      "userType": "Member"
+    },
+    {
+      "appUserAccessRight": "All",
+      "emailAddress": "user3@domain.com",
+      "displayName": "user3",
+      "identifier": "92375b57-62e2-4126-9bd6-8cff327061cf",
+      "graphId": "e1988163-3cc2-49e5-9064-db84c8d51781",
+      "principalType": "Group"
+    },
+    {
+      "appUserAccessRight": "ReadCopy",
+      "emailAddress": "user2.surname@domain.com",
+      "displayName": "user2 surname",
+      "identifier": "user2.surname@domain.com",
+      "graphId": "ae5ce8e9-b124-42d4-b3dd-182c43666af3",
+      "principalType": "User",
+      "userType": "Member"
+    },
+    {
+      "appUserAccessRight": "ReadCopy",
+      "displayName": "Whole Organization",
+      "identifier": "6b0a845f-4db6-4c48-ba73-81985962c9f6",
+      "graphId": "0d9ad2d0-ae8b-46de-afb5-8d68710dae28",
+      "principalType": "None"
+    }
+  ]
+}
