@@ -16,7 +16,7 @@ url = 'https://api.powerbi.com/v1.0/myorg/admin/apps/' + str(appid) + '/users'
 
 print(url)
 
-bearer = username = input("Enter bearer:")
+bearer = input("Enter bearer:")
 
 headers = {
     'Authorization': 'Bearer ' + bearer,

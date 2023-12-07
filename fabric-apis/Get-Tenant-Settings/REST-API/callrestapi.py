@@ -13,7 +13,7 @@ if not os.path.exists(outputpath):
 url = 'https://api.fabric.microsoft.com/v1/admin/tenantsettings'
 
 
-bearer = username = input("Enter bearer:")
+bearer = input("Enter bearer:")
 
 headers = {
     'Authorization': 'Bearer ' + bearer,
