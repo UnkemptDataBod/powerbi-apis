@@ -1,0 +1,14 @@
+{
+    "@odata.context": "http://api.powerbi.com/v1.0/myorg/admin/$metadata#apps",
+    "value": [
+      {
+        "id": "2ba944f4-3677-4112-a5c0-031d421293ff",
+        "name": "Sample App",
+        "lastUpdate": "2023-12-07T21:32:25.173Z",
+        "description": "Sample app",
+        "publishedBy": "User1 Surname",
+        "workspaceId": "702406ac-be86-4508-a9db-26f92a9ddf3b",
+        "users": []
+      }
+    ]
+  }

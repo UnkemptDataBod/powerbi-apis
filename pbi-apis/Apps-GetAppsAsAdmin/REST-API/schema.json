@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "@odata.context": {
+      "type": "string"
+    },
+    "value": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "lastUpdate": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "publishedBy": {
+            "type": "string"
+          },
+          "workspaceId": {
+            "type": "string"
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "@odata.context",
+    "value"
+  ]
+}
