@@ -13,7 +13,7 @@ if not os.path.exists(outputpath):
 url = 'https://api.powerbi.com/v1.0/myorg/admin/apps?%24top=10'
 
 
-bearer = username = input("Enter bearer:")
+bearer = input("Enter bearer:")
 
 headers = {
     'Authorization': 'Bearer ' + bearer,
