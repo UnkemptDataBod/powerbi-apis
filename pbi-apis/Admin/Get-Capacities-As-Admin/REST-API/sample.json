@@ -1,0 +1,59 @@
+{
+  "@odata.context": "http://wabi-uk-south-redirect.analysis.windows.net/v1.0/myorg/admin/$metadata#capacities",
+  "value": [
+      {
+          "id": "207f817f-b1e2-4acc-b3c2-6a28e7c00453",
+          "displayName": "Trial-capacity",
+          "admins": [
+              "user1.surname@domain.com"
+          ],
+          "sku": "FT1",
+          "state": "Active",
+          "capacityUserAccessRight": "Admin",
+          "region": "UK South",
+          "users": []
+      },
+      {
+          "id": "1449cf10-0aac-4c13-85b3-70b76a4260b4",
+          "displayName": "Premium Per User - Reserved",
+          "admins": [],
+          "sku": "PP3",
+          "state": "Active",
+          "capacityUserAccessRight": "Admin",
+          "region": "UK South",
+          "users": []
+      },
+      {
+          "id": "9fab3b84-42d5-4ca3-8b07-6b2eefb82929",
+          "displayName": "ACapacity",
+          "admins": [
+            "user@domain.com"
+          ],
+          "sku": "A1",
+          "state": "Active",
+          "region": "West Central US",
+          "capacityUserAccessRight": "Admin",
+          "tenantKeyId": "73aee99a-1618-4aa6-be2f-c1d5f738a3ce"
+        },
+        {
+          "id": "a4dea012-488c-4c47-8bd4-f32132a598a9",
+          "displayName": "AnotherCapacity",
+          "admins": [
+            "user@domain.com"
+          ],
+          "sku": "A1",
+          "state": "Active",
+          "region": "West Central US",
+          "capacityUserAccessRight": "Admin",
+          "tenantKeyId": "b26c9f2e-2b0c-4492-bbbf-3a69933c93ba",
+          "tenantKey": {
+            "id": "b2e4b2e8-2112-41c1-ba72-eb4c925b1c63",
+            "name": "company Sales",
+            "keyVaultKeyIdentifier": "https://company-vault.vault.azure.net/keys/companyKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2",
+            "isDefault": true,
+            "createdAt": "2019-04-30T21:35:15.867-07:00",
+            "updatedAt": "2019-04-30T21:35:15.867-07:00"
+          }
+        }
+  ]
+}
