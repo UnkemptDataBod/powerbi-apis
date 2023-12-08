@@ -4,13 +4,13 @@ import json
 import requests
 
 # Define inputs
-outputpath = "scriptoutput/pbi-apis/Apps-GetAppsAsAdmin/"
+outputpath = "scriptoutput/pbi-apis/Admin/WorkspaceInfo-GetModifiedWorkspaces/"
 
 # Create local output directory if not exists
 if not os.path.exists(outputpath):  
     os.makedirs(outputpath) 
 
-url = 'https://api.powerbi.com/v1.0/myorg/admin/apps?%24top=10'
+url = 'https://api.powerbi.com/v1.0/myorg/admin/workspaces/modified?modifiedSince=2023-12-02T05%3A51%3A30.0000000Z'
 
 
 bearer = input("Enter bearer:")

@@ -4,13 +4,15 @@ import json
 import requests
 
 # Define inputs
-outputpath = "scriptoutput/pbi-rest-apis/Groups-GetGroupsAsAdmin/"
+outputpath = "scriptoutput/pbi-apis/Admin/WorkspaceInfo-GetScanResult/"
 
 # Create local output directory if not exists
 if not os.path.exists(outputpath):  
     os.makedirs(outputpath) 
 
-url = 'https://api.powerbi.com/v1.0/myorg/admin/groups?$top=100&$expand=users,reports,dashboards,datasets,dataflows,workbooks'
+
+bearer = input("Enter scan id:")
+url = 'https://api.powerbi.com/v1.0/myorg/admin/workspaces/scanResult/' + str(scanid)
 
 
 bearer = input("Enter bearer:")

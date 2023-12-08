@@ -1,0 +1,39 @@
+{
+    "@odata.context": "http://wabi-uk-south-redirect.analysis.windows.net/v1.0/myorg/admin/$metadata#pipelines",
+    "value": [
+        {
+            "id": "07c62e19-2fc0-41ed-bb2a-7b9abdcb07d7",
+            "displayName": "Sample Pipeline",
+            "description": "A sample pipeline",
+            "users": [
+                {
+                    "accessRight": "Admin",
+                    "identifier": "user1.surname@domain.com",
+                    "principalType": "User"
+                }
+            ],
+            "stages": [
+                {
+                    "order": 0,
+                    "workspaceId": "ea1cdbbf-7f14-4ddf-8b5c-5386e6038729",
+                    "workspaceName": "Gardening [Env1]"
+                },
+                {
+                    "order": 1,
+                    "workspaceId": "2866fdab-d326-42c9-94cb-1d4a6f769530",
+                    "workspaceName": "Gardening [Env2]"
+                },
+                {
+                    "order": 2,
+                    "workspaceId": "547d41e4-4d42-4335-9b5f-efa9b6b47fae",
+                    "workspaceName": "Gardening [Env3]"
+                },
+                {
+                    "order": 3,
+                    "workspaceId": "37937f3b-62ef-4167-b165-69acaa4febfd",
+                    "workspaceName": "Gardening"
+                }
+            ]
+        }
+    ]
+}
