@@ -1,0 +1,979 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "workspaces": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "required": [
+          "id",
+          "name",
+          "type",
+          "state",
+          "isOnDedicatedCapacity",
+          "capacityId",
+          "defaultDatasetStorageFormat"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "isOnDedicatedCapacity": {
+            "type": "boolean"
+          },
+          "capacityId": {
+            "type": "string"
+          },
+          "defaultDatasetStorageFormat": {
+            "type": "string"
+          },
+          "Lakehouse": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "state",
+                "lastUpdatedDate",
+                "modifiedBy",
+                "createdBy",
+                "modifiedById",
+                "createdById"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "object",
+                  "properties": {},
+                  "required": []
+                },
+                "state": {
+                  "type": "string"
+                },
+                "lastUpdatedDate": {
+                  "type": "string"
+                },
+                "modifiedBy": {
+                  "type": "string"
+                },
+                "createdBy": {
+                  "type": "string"
+                },
+                "modifiedById": {
+                  "type": "string"
+                },
+                "createdById": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "artifactUserAccessRight",
+                      "emailAddress",
+                      "displayName",
+                      "identifier",
+                      "graphId",
+                      "principalType",
+                      "userType"
+                    ],
+                    "properties": {
+                      "artifactUserAccessRight": {
+                        "type": "string"
+                      },
+                      "emailAddress": {
+                        "type": "string"
+                      },
+                      "displayName": {
+                        "type": "string"
+                      },
+                      "identifier": {
+                        "type": "string"
+                      },
+                      "graphId": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "userType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "extendedProperties": {
+                  "type": "object",
+                  "properties": {
+                    "OneLakeTablesPath": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "OneLakeFilesPath": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "DwProperties": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "OneLakeTablesPath",
+                    "OneLakeFilesPath",
+                    "DwProperties"
+                  ]
+                }
+              }
+            }
+          },
+          "reports": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "reportType",
+                "id",
+                "name",
+                "datasetId",
+                "appId",
+                "createdDateTime",
+                "modifiedDateTime",
+                "originalReportObjectId",
+                "modifiedBy",
+                "createdBy",
+                "modifiedById",
+                "createdById"
+              ],
+              "properties": {
+                "reportType": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "datasetId": {
+                  "type": "string"
+                },
+                "appId": {
+                  "type": "string"
+                },
+                "createdDateTime": {
+                  "type": "string"
+                },
+                "modifiedDateTime": {
+                  "type": "string"
+                },
+                "originalReportObjectId": {
+                  "type": "string"
+                },
+                "modifiedBy": {
+                  "type": "string"
+                },
+                "createdBy": {
+                  "type": "string"
+                },
+                "modifiedById": {
+                  "type": "string"
+                },
+                "createdById": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "reportUserAccessRight",
+                      "emailAddress",
+                      "displayName",
+                      "identifier",
+                      "graphId",
+                      "principalType",
+                      "userType"
+                    ],
+                    "properties": {
+                      "reportUserAccessRight": {
+                        "type": "string"
+                      },
+                      "emailAddress": {
+                        "type": "string"
+                      },
+                      "displayName": {
+                        "type": "string"
+                      },
+                      "identifier": {
+                        "type": "string"
+                      },
+                      "graphId": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "userType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "dashboards": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "id",
+                "displayName",
+                "isReadOnly",
+                "appId"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "displayName": {
+                  "type": "string"
+                },
+                "isReadOnly": {
+                  "type": "boolean"
+                },
+                "tiles": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "id",
+                      "title",
+                      "subTitle",
+                      "reportId",
+                      "datasetId"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "subTitle": {
+                        "type": "string"
+                      },
+                      "reportId": {
+                        "type": "string"
+                      },
+                      "datasetId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "appId": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "dashboardUserAccessRight",
+                      "emailAddress",
+                      "displayName",
+                      "identifier",
+                      "graphId",
+                      "principalType",
+                      "userType"
+                    ],
+                    "properties": {
+                      "dashboardUserAccessRight": {
+                        "type": "string"
+                      },
+                      "emailAddress": {
+                        "type": "string"
+                      },
+                      "displayName": {
+                        "type": "string"
+                      },
+                      "identifier": {
+                        "type": "string"
+                      },
+                      "graphId": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "userType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "datasets": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "configuredBy",
+                "configuredById",
+                "isEffectiveIdentityRequired",
+                "isEffectiveIdentityRolesRequired",
+                "targetStorageMode",
+                "createdDate",
+                "contentProviderType"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "tables": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "name",
+                      "isHidden"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "columns": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                          "required": [
+                            "name",
+                            "dataType",
+                            "isHidden",
+                            "columnType"
+                          ],
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "dataType": {
+                              "type": "string"
+                            },
+                            "isHidden": {
+                              "type": "boolean"
+                            },
+                            "columnType": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "measures": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                          "required": [
+                            "name",
+                            "expression",
+                            "isHidden"
+                          ],
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "expression": {
+                              "type": "string"
+                            },
+                            "isHidden": {
+                              "type": "boolean"
+                            }
+                          }
+                        }
+                      },
+                      "isHidden": {
+                        "type": "boolean"
+                      },
+                      "source": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                          "required": [
+                            "expression"
+                          ],
+                          "properties": {
+                            "expression": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "expressions": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "name",
+                      "expression"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "expression": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "configuredBy": {
+                  "type": "string"
+                },
+                "configuredById": {
+                  "type": "string"
+                },
+                "isEffectiveIdentityRequired": {
+                  "type": "boolean"
+                },
+                "isEffectiveIdentityRolesRequired": {
+                  "type": "boolean"
+                },
+                "targetStorageMode": {
+                  "type": "string"
+                },
+                "createdDate": {
+                  "type": "string"
+                },
+                "contentProviderType": {
+                  "type": "string"
+                },
+                "upstreamDatasets": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "targetDatasetId",
+                      "groupId"
+                    ],
+                    "properties": {
+                      "targetDatasetId": {
+                        "type": "string"
+                      },
+                      "groupId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "users": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "datasetUserAccessRight",
+                      "emailAddress",
+                      "displayName",
+                      "identifier",
+                      "graphId",
+                      "principalType",
+                      "userType"
+                    ],
+                    "properties": {
+                      "datasetUserAccessRight": {
+                        "type": "string"
+                      },
+                      "emailAddress": {
+                        "type": "string"
+                      },
+                      "displayName": {
+                        "type": "string"
+                      },
+                      "identifier": {
+                        "type": "string"
+                      },
+                      "graphId": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "userType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "dataflows": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "objectId",
+                "name",
+                "description",
+                "configuredBy",
+                "modifiedBy",
+                "modifiedDateTime"
+              ],
+              "properties": {
+                "objectId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "configuredBy": {
+                  "type": "string"
+                },
+                "modifiedBy": {
+                  "type": "string"
+                },
+                "modifiedDateTime": {
+                  "type": "string"
+                },
+                "datasourceUsages": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "datasourceInstanceId"
+                    ],
+                    "properties": {
+                      "datasourceInstanceId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "users": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "dataflowUserAccessRight",
+                      "emailAddress",
+                      "displayName",
+                      "identifier",
+                      "graphId",
+                      "principalType",
+                      "userType"
+                    ],
+                    "properties": {
+                      "dataflowUserAccessRight": {
+                        "type": "string"
+                      },
+                      "emailAddress": {
+                        "type": "string"
+                      },
+                      "displayName": {
+                        "type": "string"
+                      },
+                      "identifier": {
+                        "type": "string"
+                      },
+                      "graphId": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "userType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "datamarts": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "type",
+                "configuredBy",
+                "configuredById",
+                "modifiedBy",
+                "modifiedById",
+                "modifiedDateTime"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "configuredBy": {
+                  "type": "string"
+                },
+                "configuredById": {
+                  "type": "string"
+                },
+                "modifiedBy": {
+                  "type": "string"
+                },
+                "modifiedById": {
+                  "type": "string"
+                },
+                "modifiedDateTime": {
+                  "type": "string"
+                },
+                "datasourceUsages": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "datasourceInstanceId"
+                    ],
+                    "properties": {
+                      "datasourceInstanceId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "users": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "datamartUserAccessRight",
+                      "emailAddress",
+                      "displayName",
+                      "identifier",
+                      "graphId",
+                      "principalType",
+                      "userType"
+                    ],
+                    "properties": {
+                      "datamartUserAccessRight": {
+                        "type": "string"
+                      },
+                      "emailAddress": {
+                        "type": "string"
+                      },
+                      "displayName": {
+                        "type": "string"
+                      },
+                      "identifier": {
+                        "type": "string"
+                      },
+                      "graphId": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "userType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "warehouses": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "configuredBy",
+                "configuredById",
+                "modifiedBy",
+                "modifiedById",
+                "modifiedDateTime"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "configuredBy": {
+                  "type": "string"
+                },
+                "configuredById": {
+                  "type": "string"
+                },
+                "modifiedBy": {
+                  "type": "string"
+                },
+                "modifiedById": {
+                  "type": "string"
+                },
+                "modifiedDateTime": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "datamartUserAccessRight",
+                      "emailAddress",
+                      "displayName",
+                      "identifier",
+                      "graphId",
+                      "principalType",
+                      "userType"
+                    ],
+                    "properties": {
+                      "datamartUserAccessRight": {
+                        "type": "string"
+                      },
+                      "emailAddress": {
+                        "type": "string"
+                      },
+                      "displayName": {
+                        "type": "string"
+                      },
+                      "identifier": {
+                        "type": "string"
+                      },
+                      "graphId": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "userType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "SQLAnalyticsEndpoint": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "configuredBy",
+                "configuredById",
+                "modifiedBy",
+                "modifiedById",
+                "modifiedDateTime"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "configuredBy": {
+                  "type": "string"
+                },
+                "configuredById": {
+                  "type": "string"
+                },
+                "modifiedBy": {
+                  "type": "string"
+                },
+                "modifiedById": {
+                  "type": "string"
+                },
+                "modifiedDateTime": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "datamartUserAccessRight",
+                      "emailAddress",
+                      "displayName",
+                      "identifier",
+                      "graphId",
+                      "principalType",
+                      "userType"
+                    ],
+                    "properties": {
+                      "datamartUserAccessRight": {
+                        "type": "string"
+                      },
+                      "emailAddress": {
+                        "type": "string"
+                      },
+                      "displayName": {
+                        "type": "string"
+                      },
+                      "identifier": {
+                        "type": "string"
+                      },
+                      "graphId": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "userType": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "relations": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "required": [
+                      "dependentOnArtifactId",
+                      "workspaceId",
+                      "relationType",
+                      "settingsList",
+                      "usage"
+                    ],
+                    "properties": {
+                      "dependentOnArtifactId": {
+                        "type": "string"
+                      },
+                      "workspaceId": {
+                        "type": "string"
+                      },
+                      "relationType": {
+                        "type": "string"
+                      },
+                      "settingsList": {
+                        "type": "string"
+                      },
+                      "usage": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "users": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "required": [
+                "groupUserAccessRight",
+                "emailAddress",
+                "displayName",
+                "identifier",
+                "graphId",
+                "principalType",
+                "userType"
+              ],
+              "properties": {
+                "groupUserAccessRight": {
+                  "type": "string"
+                },
+                "emailAddress": {
+                  "type": "string"
+                },
+                "displayName": {
+                  "type": "string"
+                },
+                "identifier": {
+                  "type": "string"
+                },
+                "graphId": {
+                  "type": "string"
+                },
+                "principalType": {
+                  "type": "string"
+                },
+                "userType": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "datasourceInstances": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "required": [
+          "datasourceType",
+          "datasourceId",
+          "gatewayId"
+        ],
+        "properties": {
+          "datasourceType": {
+            "type": "string"
+          },
+          "connectionDetails": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "url"
+            ]
+          },
+          "datasourceId": {
+            "type": "string"
+          },
+          "gatewayId": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "workspaces",
+    "datasourceInstances"
+  ]
+}

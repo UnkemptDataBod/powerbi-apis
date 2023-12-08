@@ -1,3 +1,6 @@
+> [!WARNING]  
+> I ([UnkemptDataBod](https://github.com/UnkemptDataBod) ) cannot afford to run premium capacities, so some content is inaccesible to me in a personal context outside of a trial.
+
 # powerbi-apis
 This is initially to provide a base for schema validation and as a reference for future usage of the APIs. 
 
