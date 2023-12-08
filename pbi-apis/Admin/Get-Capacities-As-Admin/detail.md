@@ -18,14 +18,12 @@ Get-PowerBICapacity -Scope Organization -ShowEncryptionKey
 ```
 
 # Important
-If you have more than 5000 apps you will not be able to return them all according to the API spec.
+None
 
 # Issues experienced
-* No audience context returned
-* A seperate call to [Apps-GetAppUsersAsAdmin](../Apps-GetAppUsersAsAdmin/detail.md) is required to get the app permissions
-* ONLY the first 5000 apps can be returned
+None
 
 # Observations
-* REST API - users array returned in results contains no data, potentially the intention is that you utilise [Apps-GetAppUsersAsAdmin](../Apps-GetAppUsersAsAdmin/detail.md) but this is not made clear
+None
 
 
