@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "@odata.context": {
+      "type": "string"
+    },
+    "value": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "required": [
+          "id",
+          "displayName",
+          "description"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "users": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "properties": {
+                "accessRight": {
+                  "type": "string",
+                  "enum": ["Admin"]  
+                },
+                "identifier": {
+                  "type": "string"
+                },
+                "principalType": {
+                  "type": "string",
+                  "enum": ["App","Group","None","User"]
+                }
+              }
+            }
+          },
+          "stages": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "properties": {
+                "order": {
+                  "type": "number",
+                  "enum": [0,1,2,3,4,5,6,7,8,9]                
+                },
+                "workspaceId": {
+                  "type": "string"
+                },
+                "workspaceName": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "@odata.context",
+    "value"
+  ]
+}

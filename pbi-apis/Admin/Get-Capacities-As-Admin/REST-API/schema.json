@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "@odata.context": {
+      "type": "string"
+    },
+    "value": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "required": [
+          "id",
+          "displayName",
+          "sku",
+          "state",
+          "region",
+          "capacityUserAccessRight"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "admins": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "sku": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "capacityUserAccessRight": {
+            "type": "string"
+          },
+          "tenantKeyId": {
+            "type": "string"
+          },
+          "tenantKey": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "keyVaultKeyIdentifier": {
+                "type": "string"
+              },
+              "isDefault": {
+                "type": "boolean"
+              },
+              "createdAt": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "keyVaultKeyIdentifier",
+              "isDefault",
+              "createdAt",
+              "updatedAt"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "@odata.context",
+    "value"
+  ]
+}

@@ -4,17 +4,14 @@ import json
 import requests
 
 # Define inputs
-outputpath = "scriptoutput/pbi-apis/Apps-GetAppUserAsAdmin/"
+outputpath = "scriptoutput/pbi-apis/Admin/Get-Capacities-As-Admin/"
 
 # Create local output directory if not exists
 if not os.path.exists(outputpath):  
     os.makedirs(outputpath) 
 
-appid = input("Enter appID:")
+url = 'https://api.powerbi.com/v1.0/myorg/admin/capacities?expand=tenantKey'
 
-url = 'https://api.powerbi.com/v1.0/myorg/admin/apps/' + str(appid) + '/users'
-
-print(url)
 
 bearer = input("Enter bearer:")
 

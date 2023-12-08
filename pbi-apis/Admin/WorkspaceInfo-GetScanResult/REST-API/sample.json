@@ -1,0 +1,2406 @@
+{
+  "workspaces": [
+    {
+      "id": "9e1a828f-973c-439e-b8de-43b05cd5f021",
+      "name": "Gardening",
+      "type": "Workspace",
+      "state": "Active",
+      "isOnDedicatedCapacity": true,
+      "capacityId": "c8a29127-fa07-4a83-9f6a-4c532748ad74",
+      "defaultDatasetStorageFormat": "Large",
+      "Lakehouse": [
+        {
+          "id": "7d8e8c8e-e151-4908-bc2a-8ec96a97b1ba",
+          "name": "SampleLakehouse",
+          "description": null,
+          "state": "Active",
+          "lastUpdatedDate": "2023-12-07T23:50:01.1865046",
+          "modifiedBy": "user1.surname@domain.com",
+          "createdBy": "user1.surname@domain.com",
+          "modifiedById": "723c9aba-b4c6-4dbd-befc-04d8b87c9437",
+          "createdById": "dcbe5eb3-5f2f-45e2-925e-a8665442f74e",
+          "users": [
+            {
+              "artifactUserAccessRight": "ReadWriteReshareExecute",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "3e0d4fa9-0c14-4ec5-9921-bd8b2adbd317",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "artifactUserAccessRight": "ReadWriteReshareExecute",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "67ddc414-ae4c-4341-a4ed-dc572b06d452",
+              "graphId": "d1abb8c1-5e20-4f7e-8586-95cf3799b5d7",
+              "principalType": "Group",
+              "userType": null
+            }
+          ],
+          "extendedProperties": {
+            "OneLakeTablesPath": "https://onelake.dfs.fabric.microsoft.com/4d514107-50f3-4658-a9fc-fefd62801f42/05d242e8-4b05-4c0a-b154-286b00b64f77/Tables",
+            "OneLakeFilesPath": "https://onelake.dfs.fabric.microsoft.com/155760cd-4ca3-4b0d-aad7-d9eb9525e4bf/30c934f9-42b3-4d58-9405-87afbe5f5ac3/Files",
+            "DwProperties": "{\"tdsEndpoint\":\"qprmet3vm43e5goadchug2jg6y-yfeu2of26stehkmm47gxkvhxfi.datawarehouse.pbidedicated.windows.net\",\"id\":\"6d87770f-925d-4851-b4b3-e9b95003f168\",\"provisioningStatus\":\"Success\"}"
+          }
+        }
+      ],
+      "reports": [
+        {
+          "reportType": "PowerBIReport",
+          "id": "73edd7a7-1ced-4503-8000-e8cb9652b793",
+          "name": "Seed Germination",
+          "datasetId": "27ae9e89-586b-416a-a850-874f70ba3289",
+          "users": [
+            {
+              "reportUserAccessRight": "Owner",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "5fe04e2d-1fe3-4231-8e7d-1f7f47b299fd",
+              "graphId": "828cba2c-2ea9-402f-8384-8a5e0756a986",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "reportUserAccessRight": "Owner",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "73e818da-793e-452b-aecf-0793813313cf",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "reportUserAccessRight": "Read",
+              "emailAddress": "user2.surname@domain.com",
+              "displayName": "user2 surname",
+              "identifier": "user2.surname@domain.com",
+              "graphId": "d069ee69-29cf-4f8b-a722-d1b61a790fd8",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        },
+        {
+          "reportType": "PowerBIReport",
+          "id": "6ca7e1fc-b8d1-4ec3-9b70-2b49a44ad7b7",
+          "name": "[App] Seed Germination",
+          "datasetId": "8b43342a-c412-4cb0-8a52-a41c2b0c844a",
+          "appId": "c74a91cb-3e40-40d9-9016-17195e4067c1",
+          "createdDateTime": "2023-12-07T21:32:25.183",
+          "modifiedDateTime": "2023-12-07T21:32:25.183",
+          "originalReportObjectId": "babcfab5-5a14-4cd8-9d6e-366deec4b899",
+          "modifiedBy": "user1.surname@domain.com",
+          "createdBy": "user1.surname@domain.com",
+          "modifiedById": "c6747c9a-b1da-4bf3-81a4-8bf43f64393e",
+          "createdById": "7f71a2ed-0b55-43c7-bb14-90e3f72443ce",
+          "users": [
+            {
+              "reportUserAccessRight": "ReadCopy",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "586eecd0-ad40-4661-9f7f-d1ab5faa898b",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "reportUserAccessRight": "ReadCopy",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "52049834-8ea9-4830-9815-cb74771c2733",
+              "graphId": "60112e43-adb1-4621-bca4-d23515090a7b",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "reportUserAccessRight": "ReadCopy",
+              "emailAddress": null,
+              "displayName": "Whole Organization",
+              "identifier": "1da0b547-890c-4b3d-993c-83a87162153d",
+              "graphId": "187ddbd7-49fc-4acf-91da-1e641cd5715f",
+              "principalType": "None",
+              "userType": null
+            }
+          ]
+        }
+      ],
+      "dashboards": [
+        {
+          "id": "11922977-f6f1-4c55-a9fe-cb6a897a1393",
+          "displayName": "test qa",
+          "isReadOnly": false,
+          "tiles": [
+            {
+              "id": "b1a7fd84-cfd4-418f-af1a-79ec6f4195f6",
+              "title": "# Seeds Sown, # Seed Germinated",
+              "subTitle": "by Sow Date",
+              "reportId": "3d053931-c7b2-43c9-a3c7-d9d9d1a7fa07",
+              "datasetId": "0432cf02-9d9c-4cf3-973d-b630048c98ab"
+            },
+            {
+              "id": "e0174ad2-7d8b-4be8-a0ee-9dd6ed709026",
+              "title": "Overall % Germination Rate",
+              "reportId": "74eb75cb-ff80-469d-85dc-82bce3cf75b3",
+              "datasetId": "7a2bef0b-b223-4648-b36f-3a657f0b4ad6"
+            },
+            {
+              "id": "8f73e461-d91a-4d92-b5df-649c7b64406c",
+              "title": "Average of % Germination Rate",
+              "subTitle": "by Planted by",
+              "reportId": "514f13b2-9600-48d8-8a01-1508cfb3ab37",
+              "datasetId": "854ea2e8-b023-4626-9a12-271e4943d6ed"
+            }
+          ],
+          "users": [
+            {
+              "dashboardUserAccessRight": "Owner",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "bc2cb85b-b439-4c2e-b74d-46598828d7b2",
+              "graphId": "58129aa6-edcb-4b13-b278-86a6a2b4c506",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "dashboardUserAccessRight": "Owner",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "2ff2c07f-f975-436b-8ed1-afe72dc9a36a",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        },
+        {
+          "id": "07fe01b1-5d1f-4fba-ac84-b2caec1555d3",
+          "displayName": "Sample Dashboard",
+          "isReadOnly": false,
+          "tiles": [
+            {
+              "id": "339ff6bd-7ceb-498f-8ffe-bd55769829b5",
+              "title": "Average of % Germination Rate",
+              "subTitle": "by Planted by",
+              "reportId": "8f1f21ef-8321-4b67-8025-b51697e4bd0c",
+              "datasetId": "e419ee7c-6281-451b-a80b-2b9bd1a5672b"
+            }
+          ],
+          "users": [
+            {
+              "dashboardUserAccessRight": "Owner",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "4b54da40-d732-469e-8348-151ec82710c8",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "dashboardUserAccessRight": "Owner",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "cd84bd7d-0a64-4539-a528-0b98a81afe14",
+              "graphId": "7985386b-8fa1-4a0a-ae31-e94c4ef21c62",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        },
+        {
+          "id": "728e6aab-f8f6-463f-b35d-170e328b67c2",
+          "displayName": "[App] Sample Dashboard",
+          "isReadOnly": false,
+          "tiles": [
+            {
+              "id": "d97428d8-bd3e-47bc-b7c8-3046b2cc3b5f",
+              "title": "Average of % Germination Rate",
+              "subTitle": "by Planted by",
+              "reportId": "a8f56463-7be9-4556-a507-ab6839c17212",
+              "datasetId": "9b3e11ce-6ba0-48fb-803a-453ee431b482"
+            }
+          ],
+          "appId": "39d11f91-b523-4079-b6ee-c6370a326c19",
+          "users": [
+            {
+              "dashboardUserAccessRight": "ReadCopy",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "45a05aa4-5ac7-4933-9e6e-dd8528a6bdb9",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "dashboardUserAccessRight": "ReadCopy",
+              "emailAddress": "user2.surname@domain.com",
+              "displayName": "user2 surname",
+              "identifier": "user2.surname@domain.com",
+              "graphId": "50f7b9f7-fc1d-42d6-a7e4-3048e4a67aae",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "dashboardUserAccessRight": "ReadCopy",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "688fbc35-2f8e-493d-841a-d4ccc9f1e305",
+              "graphId": "66a62a39-724c-4904-9cbc-2bfe6e623fa3",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        }
+      ],
+      "datasets": [
+        {
+          "id": "94f16f1d-cc7b-4f01-bf3d-98f0b743cea0",
+          "name": "Seed Germination",
+          "tables": [],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "c336409b-c1b0-4a42-b8cd-4e6bdd6b030b",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "Abf",
+          "createdDate": "2017-04-07T13:00:03.087",
+          "contentProviderType": "Unknown",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "0819fce8-802f-4804-8454-262ee56767b4"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "9b57f373-ecf3-4c65-897e-515e962344bb",
+              "graphId": "39c6249c-5f99-4ed8-a6ea-9eff77e4c22d",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "a5785569-f493-477a-98c3-6391980d3d98",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datasetUserAccessRight": "ReadExplore",
+              "emailAddress": "user2.surname@domain.com",
+              "displayName": "user2 surname",
+              "identifier": "user2.surname@domain.com",
+              "graphId": "e9ea7657-685e-4863-8c98-279fe8908286",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datasetUserAccessRight": "ReadExplore",
+              "emailAddress": null,
+              "displayName": "Whole Organization",
+              "identifier": "6e5be354-5eb6-48fb-9a73-d264dff802cc",
+              "graphId": "f6cd1f4d-af81-4513-a850-d025fa0334f8",
+              "principalType": "None",
+              "userType": null
+            }
+          ]
+        },
+        {
+          "id": "c29271c3-190d-43e4-9698-4482c9b990c9",
+          "name": "downstream dataset",
+          "tables": [
+            {
+              "name": "Sheet1",
+              "columns": [
+                {
+                  "name": "Plant Type",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Simple Plant Name",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Latin Name",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Supplier",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Sow Date",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "# Seeds Sown",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "# Seed Germinated",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Germination Rate",
+                  "dataType": "Double",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Earliest Germination Date",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Latest Germination Date",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Germinated in",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Planted by",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "% Germination Rate",
+                  "dataType": "Double",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [
+                {
+                  "name": "Target Germination Rate",
+                  "expression": "EXTERNALMEASURE(\"Target Germination Rate\", INTEGER, \"DirectQuery to AS - Seed Germination\")",
+                  "isHidden": false
+                }
+              ],
+              "isHidden": false,
+              "source": [
+                {
+                  "expression": "Sheet1"
+                }
+              ]
+            },
+            {
+              "name": "Table",
+              "columns": [
+                {
+                  "name": "dfsa",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false,
+              "source": [
+                {
+                  "expression": "let\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WSkspTs8oSVeKjQUA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [dfsa = _t]),\n    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"dfsa\", type text}})\nin\n    #\"Changed Type\""
+                }
+              ]
+            }
+          ],
+          "expressions": [
+            {
+              "name": "DirectQuery to AS - Seed Germination",
+              "expression": "let\n    Source = AnalysisServices.Database(\"powerbi://api.powerbi.com/v1.0/myorg/Gardening\", \"Seed Germination\"),\n    Cubes = Table.Combine(Source[Data]),\n    Cube = Cubes{[Id=\"Model\", Kind=\"Cube\"]}[Data]\nin\n    Cube"
+            }
+          ],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "b2dd1ddb-28d3-4d75-b0ba-40d8e7d294b1",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "Abf",
+          "createdDate": "2023-12-06T22:26:18.287",
+          "contentProviderType": "PbixInCompositeMode",
+          "upstreamDatasets": [
+            {
+              "targetDatasetId": "50ca275b-4e1e-4af1-a49c-0d652aa9b321",
+              "groupId": "dcd5da7f-451a-4c84-b979-8532f321f1ee"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "781f6d1f-643a-47bc-aa42-5a14d5add42f",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "d5430471-d8fd-40dc-b308-ee927591c6cf",
+              "graphId": "47df1cbc-6cd5-4479-972f-df17a4d86293",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        },
+        {
+          "id": "100eafac-4a63-4df4-8db2-273c05c580a3",
+          "name": "SampleDataMart",
+          "tables": [],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "880e024a-b4a5-475c-a45f-4dd55396aef3",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "Abf",
+          "createdDate": "2023-12-07T23:08:36.763",
+          "contentProviderType": "InImportMode",
+          "upstreamDatamarts": [
+            {
+              "targetDatamartId": "ed036a9b-6739-4458-8db5-6ada5bb8155b",
+              "groupId": "cacc73a4-848e-40b9-812e-d4ba8a8aa456"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "0407523b-c01b-43b8-bfe8-7d82a365b245",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "adb69147-5847-4e86-8ab6-bbbf8aa337bf",
+              "graphId": "9937ab7c-5363-43fd-8c53-5fd8df3ce701",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        },
+        {
+          "id": "8939e8ea-96cf-4d7b-b798-84757ec69406",
+          "name": "SampleWarehouse",
+          "tables": [
+            {
+              "name": "table1",
+              "columns": [
+                {
+                  "name": "col1",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false,
+              "source": [
+                {
+                  "expression": "table1"
+                }
+              ]
+            }
+          ],
+          "expressions": [
+            {
+              "name": "DatabaseQuery",
+              "expression": "let\n    database = Sql.Database(\"ahahhahahhahha.datawarehouse.pbidedicated.windows.net\", \"5a008760-abd3-45a5-83ef-96a9342bd853\")\nin\n    database\n"
+            }
+          ],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "539e6dce-d79a-4e8f-9934-438c3dd235d0",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "PremiumFiles",
+          "createdDate": "2023-12-07T23:44:50.333",
+          "contentProviderType": "InCompositeMode",
+          "relations": [
+            {
+              "dependentOnArtifactId": "d67cc65f-576c-4aaf-b87e-85c3411bdf18",
+              "workspaceId": "4494cf69-b7b0-4a93-a811-39e855cbed7e",
+              "relationType": "CascadeDelete",
+              "settingsList": "CascadeDelete",
+              "usage": "None"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "32edf7a9-1ccb-4fa5-84c1-0cd1eb000897",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "185ee6b2-bf01-4f75-8e5e-d1f6e2d01f41",
+              "graphId": "3e040c41-b9b2-44c1-885a-cfd30af69508",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        },
+        {
+          "id": "371caef5-69b1-4c48-85e6-a6b7b9e74799",
+          "name": "SampleLakehouse",
+          "tables": [
+            {
+              "name": "table1",
+              "columns": [
+                {
+                  "name": "col1",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false,
+              "source": [
+                {
+                  "expression": "table1"
+                }
+              ]
+            }
+          ],
+          "expressions": [
+            {
+              "name": "DatabaseQuery",
+              "expression": "let\n    database = Sql.Database(\"gregtrvwtrgfweg.datawarehouse.pbidedicated.windows.net\", \"1dbc38bc-ebe8-4d2a-b94c-e10c940a95c6\")\nin\n    database\n"
+            }
+          ],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "2c05669b-e647-40b7-9cf7-807281436aa4",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "PremiumFiles",
+          "createdDate": "2023-12-07T23:49:52.753",
+          "contentProviderType": "InCompositeMode",
+          "relations": [
+            {
+              "dependentOnArtifactId": "72b5e571-248c-4727-b405-c3c163806d92",
+              "workspaceId": "947664f4-2ca5-4c6f-8751-96e82efc75e3",
+              "relationType": "CascadeDelete",
+              "settingsList": "CascadeDelete",
+              "usage": "None"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "48bd295c-a8fa-4e51-8656-ad68ac1e41f6",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "ee81218c-dc63-49e4-921b-2f24d0dfbb41",
+              "graphId": "7ed9dabd-69d8-4c76-a0ee-a15d47cc27dc",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        }
+      ],
+      "dataflows": [
+        {
+          "objectId": "c48eccaa-fa3a-4057-963e-37f01d6c45fd",
+          "name": "Sample Dataflow",
+          "description": "",
+          "configuredBy": "user1.surname@domain.com",
+          "modifiedBy": "user1.surname@domain.com",
+          "modifiedDateTime": "2023-12-06T21:58:46.06Z",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "bf5797d2-590e-414a-a748-f56183e13c70"
+            }
+          ],
+          "users": [
+            {
+              "dataflowUserAccessRight": "Owner",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "8b599f7f-46e9-4605-9d83-ebd0d35bc817",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "dataflowUserAccessRight": "Owner",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "534df253-4cef-4aa9-89b4-8b2389599ead",
+              "graphId": "9406577d-872a-44f9-a10b-e4f7465b3468",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        }
+      ],
+      "datamarts": [
+        {
+          "id": "bb63db7e-dc54-4710-88ad-8e5a084e19b6",
+          "name": "SampleDataMart",
+          "type": "Sql",
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "710e9c74-1067-4fb1-9f09-c962cbaf4b9d",
+          "modifiedBy": "user1.surname@domain.com",
+          "modifiedById": "89efc7ce-e8e8-479a-98c4-8a6729927634",
+          "modifiedDateTime": "2023-12-07T23:08:49.51",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "dee743bd-1c61-49c2-b2a4-57a1276e000c"
+            }
+          ],
+          "users": [
+            {
+              "datamartUserAccessRight": "ReadWriteReshare",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "bf68c2c7-8cde-4377-b760-a9a115b5b9e9",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datamartUserAccessRight": "ReadWriteReshare",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "ad626319-0a50-444c-9508-27f9a1f43cd3",
+              "graphId": "f721b357-dace-4597-8833-bd131392a8a2",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        }
+      ],
+      "warehouses": [
+        {
+          "id": "43d75db9-5471-4328-98c4-8777a00f1175",
+          "name": "SampleWarehouse",
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "26c94390-1470-44ed-9e87-ec2b3eddc189",
+          "modifiedBy": "user1.surname@domain.com",
+          "modifiedById": "6449b58b-5e87-4f0e-8f8e-0ff0fed4d7f3",
+          "modifiedDateTime": "2023-12-07T23:51:57.803",
+          "users": [
+            {
+              "datamartUserAccessRight": "ReadWriteReshare",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "6a33a3b4-440a-4301-bfeb-52e251b9c7bb",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datamartUserAccessRight": "ReadWriteReshare",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "27bcba68-155f-468c-8784-e101fac7a224",
+              "graphId": "af84e099-f8ae-4b4e-bd8e-8d137e249ee3",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        }
+      ],
+      "SQLAnalyticsEndpoint": [
+        {
+          "id": "88e85d6d-7202-492a-b6f7-08fadcff2491",
+          "name": "SampleLakehouse",
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "416a3025-0426-4406-ba79-b241ca1d800a",
+          "modifiedBy": "user1.surname@domain.com",
+          "modifiedById": "e03c5ff3-dcd8-4eb3-b1c0-0cc67f3d5050",
+          "modifiedDateTime": "2023-12-07T23:50:03.133",
+          "users": [
+            {
+              "datamartUserAccessRight": "ReadWriteReshare",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "965a0ed5-a5ff-4a91-8efe-d997a46a9ce8",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datamartUserAccessRight": "ReadWriteReshare",
+              "emailAddress": null,
+              "displayName": "Gardening",
+              "identifier": "b6051cca-2523-4b5f-9e76-f89092c4e4f4",
+              "graphId": "7a24883f-fc83-4868-b13b-33011d691f0a",
+              "principalType": "Group",
+              "userType": null
+            }
+          ],
+          "relations": [
+            {
+              "dependentOnArtifactId": "1aac5ed4-81bc-4338-a935-5bfbddbe98ae",
+              "workspaceId": "78f33cb1-8176-4e75-8f45-f9a1df7dbf49",
+              "relationType": "CascadeDelete",
+              "settingsList": "CascadeDelete",
+              "usage": "None"
+            }
+          ]
+        }
+      ],
+      "users": [
+        {
+          "groupUserAccessRight": "Admin",
+          "emailAddress": "user1.surname@domain.com",
+          "displayName": "user1 surname",
+          "identifier": "user1.surname@domain.com",
+          "graphId": "511a899a-9faa-4623-8a6b-9c02995ca889",
+          "principalType": "User",
+          "userType": "Member"
+        },
+        {
+          "groupUserAccessRight": "Member",
+          "emailAddress": null,
+          "displayName": "Gardening",
+          "identifier": "4895155c-1dc8-424a-9239-ad219dc71464",
+          "graphId": "b6812724-374b-4ae8-bc66-9c8de0b99960",
+          "principalType": "Group",
+          "userType": null
+        }
+      ]
+    },
+    {
+      "id": "88dd1283-25e6-4ac0-8a02-3d84a4a876ab",
+      "name": "SSRS Reporting",
+      "type": "Workspace",
+      "state": "Active",
+      "isOnDedicatedCapacity": false,
+      "reports": [
+        {
+          "reportType": "PowerBIReport",
+          "id": "dc19b45a-ac95-43a5-a7b3-01b1484cb0d5",
+          "name": "Report executions by user",
+          "datasetId": "79a979c1-ea5f-481f-a486-1265b6d57671",
+          "users": [
+            {
+              "reportUserAccessRight": "Owner",
+              "emailAddress": null,
+              "displayName": "SSRS Reporting",
+              "identifier": "754536c9-9860-451d-9d89-91e8f770a5d2",
+              "graphId": "890d0933-0deb-426c-a7f8-5067bce83d07",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "reportUserAccessRight": "Owner",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "8e371860-e8fd-4579-bf0f-304a013a160d",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        },
+        {
+          "reportType": "PowerBIReport",
+          "id": "a5b5c3bf-4c54-4619-9767-5a04f909ca8a",
+          "name": "Report Execution Statistics",
+          "datasetId": "8dd4cd7a-d5ce-4fb0-b8b3-c16f11ef2a42",
+          "users": [
+            {
+              "reportUserAccessRight": "Owner",
+              "emailAddress": null,
+              "displayName": "SSRS Reporting",
+              "identifier": "46f45f21-8d97-42ea-a61c-0c8e59513c7a",
+              "graphId": "d41adbfe-71d9-40c2-bf49-9d984493d990",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "reportUserAccessRight": "Owner",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "cf889da5-6dd2-4144-8c20-10835b1161c6",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        }
+      ],
+      "dashboards": [
+        {
+          "id": "e363bdba-ab5c-40d3-8021-ae4af5ac3484",
+          "displayName": "Reporting Services",
+          "isReadOnly": false,
+          "tiles": [
+            {
+              "id": "c27382de-588e-4bcf-a88f-5284884b7931",
+              "title": "Top 10 Users",
+              "reportId": "8f1d8190-5082-4dc2-bbfb-4b138002b6ef",
+              "datasetId": "4adcddb2-e639-4621-9e93-bcdf320f69e4"
+            },
+            {
+              "id": "1b2bf912-0544-49a2-8faf-f84d6149be4a",
+              "title": "Average run time seconds",
+              "reportId": "b7935828-70d5-47c7-b0ef-75e6445534c4",
+              "datasetId": "c4bfcd8b-1e44-4968-96a5-9e5680ee336a"
+            },
+            {
+              "id": "5f8bdcd2-6b06-49cd-957d-504b52e445ff",
+              "title": "Total Executions by Export Format",
+              "reportId": "e7f62e49-c5cd-4fea-b6de-b3138e6ff5f7",
+              "datasetId": "5895572e-0f96-4fff-9ae9-b10b4d4c3d2c"
+            },
+            {
+              "id": "0933b563-4502-4434-9c6f-bc8c9266e2be",
+              "title": "Average report run breakdown",
+              "reportId": "8be8d36c-1918-4210-94e1-d94179f9bfb3",
+              "datasetId": "1c43d087-46a3-4684-bb2f-3656e73a055c"
+            },
+            {
+              "id": "7de44243-d8cf-4412-aca0-9e69dba3d0ab",
+              "title": "Average report run breakdown",
+              "reportId": "3eb57763-85f8-4cf1-813f-36eae00c35d2",
+              "datasetId": "512bb6f0-6741-432e-9be1-79d777b6c0d0"
+            },
+            {
+              "id": "4df05a17-0674-4ffe-b555-1a7edab0df06",
+              "title": "% Report executions by source",
+              "reportId": "059662b3-7795-4e1e-915d-71c3e7d55a63",
+              "datasetId": "72d4f14f-f1bd-4590-a179-e506fe27f93d"
+            }
+          ],
+          "users": [
+            {
+              "dashboardUserAccessRight": "Owner",
+              "emailAddress": null,
+              "displayName": "SSRS Reporting",
+              "identifier": "dc261995-de0e-4496-8660-d4cd4d20cfd1",
+              "graphId": "4b9ea6fb-989e-433f-afcb-e8c2349776c9",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "dashboardUserAccessRight": "Owner",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "f09e93a1-4066-4500-9d9c-974a94a98419",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        }
+      ],
+      "datasets": [
+        {
+          "id": "efea19b1-90fc-4414-bbf2-a8ebf6d88758",
+          "name": "Report executions by user",
+          "tables": [],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "8a886b25-50d0-4f37-925c-8d362bf0d57d",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "directQueryRefreshSchedule": {
+            "frequency": 60,
+            "days": [],
+            "times": [],
+            "localTimeZoneId": "UTC"
+          },
+          "targetStorageMode": "Abf",
+          "createdDate": "2017-04-07T07:56:58.897",
+          "contentProviderType": "Unknown",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "8b29fa8f-3e4a-466b-a9f8-ffbb31089978"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "SSRS Reporting",
+              "identifier": "cb608c0d-96d8-4d06-bf9b-da84bf18b1bf",
+              "graphId": "b4f7c9d9-9f0d-4426-984d-1153d555ad11",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "8441baf8-3801-4e41-a924-e23764a51943",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        },
+        {
+          "id": "ead3309f-671e-4cef-b412-241f69a0705f",
+          "name": "Report Execution Statistics",
+          "tables": [
+            {
+              "name": "dwh BaseViewFactReportRun",
+              "columns": [
+                {
+                  "name": "Total Executions",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidFromDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidToDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDIsCurrent",
+                  "dataType": "Boolean",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDInitialReportRunSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "LogEntryID",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "InstanceSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ReportSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RunDateSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RunTimeSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "UserSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ReportRunAttributeSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "DataRetrievalSeconds",
+                  "dataType": "Double",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ProcessingSeconds",
+                  "dataType": "Double",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RenderingSeconds",
+                  "dataType": "Double",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RunSizeKB",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RowsReturned",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Total Run Time",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "expression": "'dwh BaseViewFactReportRun'[DataRetrievalSeconds] + 'dwh BaseViewFactReportRun'[ProcessingSeconds] + 'dwh BaseViewFactReportRun'[RenderingSeconds]",
+                  "columnType": "Calculated"
+                },
+                {
+                  "name": "Target Execution Time",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "expression": "1",
+                  "columnType": "Calculated"
+                }
+              ],
+              "measures": [],
+              "isHidden": false
+            },
+            {
+              "name": "dwh BaseViewDimTime",
+              "columns": [
+                {
+                  "name": "TimeSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidFromDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidToDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDIsCurrent",
+                  "dataType": "Boolean",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDInitialTimeSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "TimeKey",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "HourSerial",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "MinuteSerial",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SecondSerial",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false
+            },
+            {
+              "name": "dwh BaseViewDimReportRunAttribute",
+              "columns": [
+                {
+                  "name": "ReportRunAttributeSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidFromDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidToDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDIsCurrent",
+                  "dataType": "Boolean",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDInitialReportRunAttributeSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RequestType",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RunFormat",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RunStatus",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "RunSource",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false
+            },
+            {
+              "name": "dwh BaseViewDimReport",
+              "columns": [
+                {
+                  "name": "ReportSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidFromDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidToDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDIsCurrent",
+                  "dataType": "Boolean",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDInitialReportSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ReportID",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ReportName",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ReportType",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ReportPath",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ReportCacheMinutes",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "CreatedByUserSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "CreatedDateSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ModifiedByUserSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "ModifiedDateSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false
+            },
+            {
+              "name": "dwh BaseViewDimInstance",
+              "columns": [
+                {
+                  "name": "InstanceSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidFromDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidToDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDIsCurrent",
+                  "dataType": "Boolean",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDInitialInstanceSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "InstanceName",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false
+            },
+            {
+              "name": "dwh BaseViewDimDate",
+              "columns": [
+                {
+                  "name": "DateSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidFromDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidToDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDIsCurrent",
+                  "dataType": "Boolean",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDInitialDateSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "DateKey",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "CalendarWeek",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "YearSerial",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "MonthSerial",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "DaySerial",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "CalendarMonthName",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "DayName",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "FinancialYear",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "FinancialQuarter",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "FinancialMonth",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "FinancialWeek",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false
+            },
+            {
+              "name": "dwh BaseViewDimUser",
+              "columns": [
+                {
+                  "name": "UserSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidFromDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDValidToDateTime",
+                  "dataType": "DateTime",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDIsCurrent",
+                  "dataType": "Boolean",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "SCDInitialUserSKey",
+                  "dataType": "Int64",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "UserID",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "UserName",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "UserType",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false
+            }
+          ],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "86c7aa33-2e60-4050-a962-3f1b05d778fe",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "directQueryRefreshSchedule": {
+            "frequency": 15,
+            "days": [],
+            "times": [],
+            "localTimeZoneId": "UTC"
+          },
+          "targetStorageMode": "Abf",
+          "createdDate": "2017-04-07T09:26:55.097",
+          "contentProviderType": "Unknown",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "d7e89dcc-51be-40c1-91c8-ad939ad29d7b"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "SSRS Reporting",
+              "identifier": "999bb5e3-bbbc-4c5d-8471-992706d56741",
+              "graphId": "2cf82002-5e68-4ad8-9de6-f21744b2122e",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "78b79991-f2a8-4f19-9b49-980b70439fe4",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        }
+      ],
+      "dataflows": [],
+      "datamarts": [],
+      "users": [
+        {
+          "groupUserAccessRight": "Admin",
+          "emailAddress": "user1.surname@domain.com",
+          "displayName": "user1 surname",
+          "identifier": "user1.surname@domain.com",
+          "graphId": "4706fcae-373e-4534-920c-0f1d26e32aa2",
+          "principalType": "User",
+          "userType": "Member"
+        },
+        {
+          "groupUserAccessRight": "Member",
+          "emailAddress": null,
+          "displayName": "SSRS Reporting",
+          "identifier": "f4a4e27f-34e5-4ca8-a1cd-6a874380c3f7",
+          "graphId": "c41b28b1-3770-4751-a327-42dd2a2fcfa6",
+          "principalType": "Group",
+          "userType": null
+        }
+      ]
+    },
+    {
+      "id": "2139a673-e8ed-4d11-b242-be72d9359a27",
+      "name": "Website",
+      "type": "Workspace",
+      "state": "Deleted",
+      "isOnDedicatedCapacity": false,
+      "reports": [
+        {
+          "reportType": "PowerBIReport",
+          "id": "190bef62-f6df-49cc-b518-dba6397daf2a",
+          "name": "Google Analytics",
+          "datasetId": "4fccb314-3b1b-4c64-88b9-dd84d94c28f3"
+        },
+        {
+          "reportType": "PowerBIReport",
+          "id": "7d23e6fe-6f83-4c09-97da-735ce6b3ae1a",
+          "name": "domain Main Site",
+          "datasetId": "7b4bcb46-40e4-49f2-936a-89b2fdf8d696"
+        },
+        {
+          "reportType": "PowerBIReport",
+          "id": "c49d1dce-9f9d-4158-9962-35e44ff9241c",
+          "name": "anotherdomain - Google Analytics",
+          "datasetId": "d25dd462-d1f0-4e25-8124-69f96b7457b5"
+        }
+      ],
+      "dashboards": [
+        {
+          "id": "02c09a75-8895-4df5-81d9-b70bf476a15c",
+          "displayName": "Google Analytics",
+          "isReadOnly": false,
+          "tiles": [
+            {
+              "id": "52cd7951-d614-4228-8a26-0f5e47496ad2",
+              "title": "Hits by Browser",
+              "subTitle": "",
+              "reportId": "98cce7cd-c8f3-44cc-aa35-dd2af365d6ad",
+              "datasetId": "4bc0a236-4a30-421a-9687-94dbd2377291"
+            },
+            {
+              "id": "d89c80e3-e1ee-4327-ba54-2e0c18871fc1",
+              "title": "Site Traffic (Last 30 days)",
+              "subTitle": "",
+              "reportId": "64d2b735-ee5f-4287-98bd-53897d786053",
+              "datasetId": "4c85ea59-7e98-4d64-8800-e9dceaa22b2d"
+            },
+            {
+              "id": "9ea82372-f4c8-47a4-9f4e-015fec407291",
+              "title": "Sessions by Day of Week",
+              "subTitle": "",
+              "reportId": "3009d0b5-03ae-46fc-be44-684a9f6f3d92",
+              "datasetId": "8fd881e4-0881-4321-9a3a-2ea97240205b"
+            },
+            {
+              "id": "85def012-8e5f-4e1c-8d37-262f5d5ce5ed",
+              "title": "Average of Page Load Time (sec)",
+              "subTitle": "",
+              "reportId": "6c7ade1d-0dc8-4c40-a57f-079e96f851ff",
+              "datasetId": "065c1440-e16a-4149-87d4-162bfa7ddd25"
+            },
+            {
+              "id": "a76028ee-b850-43c9-b4bb-d25870690696",
+              "title": "Avg. Session Duration (sec)",
+              "reportId": "9b6ef667-7f79-4afc-9086-c3005101cfee",
+              "datasetId": "a31fc5a9-9576-4f9c-836e-1cbd42655bc4"
+            },
+            {
+              "id": "04a2c490-b33c-4a91-b588-d38a46d46f46",
+              "title": "Bounces (Last 30 days)",
+              "reportId": "41ad4314-5b88-4671-9c68-aca44ff14c13",
+              "datasetId": "b7911bef-c291-4a21-b79f-ed230d773fb4"
+            },
+            {
+              "id": "6df4f1d0-342e-4011-8bd1-ea6616a33a3c",
+              "title": "Top Pages by Unique Page Views",
+              "reportId": "d62a7404-4de7-48ce-b166-774cdfb17264",
+              "datasetId": "bd7fca58-c60f-4b92-8ad4-c8cb79a00f09"
+            },
+            {
+              "id": "f6c33f0e-c0f0-4405-97d6-b20f5475840c",
+              "title": "Sessions (Last 30 days)",
+              "reportId": "1fee0b2e-8fa5-4797-aa32-04e97ab87662",
+              "datasetId": "a915e345-4e81-4211-9e22-089b626b023f"
+            },
+            {
+              "id": "7cbe5c26-6004-431a-8fdf-9cf1ec4883ee",
+              "title": "New Users % Growth",
+              "subTitle": "30 day period",
+              "reportId": "d395cdf2-a727-4dce-b9ce-ef1dba1f171a",
+              "datasetId": "3c7772d9-64ff-4696-ab32-4a1c8929454f"
+            },
+            {
+              "id": "670faafa-275f-4c1b-bb25-f3d6c3c2025b",
+              "title": "Avg. Daily New Users (Last 30 days)",
+              "reportId": "884716e6-9959-4a5f-bd45-7e4659383722",
+              "datasetId": "cd0b22f3-2560-4fca-9053-222ee7b2f4f8"
+            },
+            {
+              "id": "f9be16e6-f1fa-4572-ab87-bf37195e1f40",
+              "title": "Avg. Daily Users (weekday)",
+              "subTitle": "Last 30 days",
+              "reportId": "a7af6bf3-08db-45d8-9163-c92e9815f2e8",
+              "datasetId": "da98acc2-6e25-47d1-976b-1a3c8e53dde5"
+            },
+            {
+              "id": "02a5d2a0-8979-4b37-92e7-f367554ae1ef",
+              "reportId": "e1e70201-f0a0-45e1-a313-7b9bb70cf55b",
+              "datasetId": "172b66a7-9ea9-48ee-bcde-a343b2729a7f"
+            }
+          ]
+        },
+        {
+          "id": "251e36a9-0762-437e-a1e0-b769780eb9b6",
+          "displayName": "anotherdomain - Google Analytics",
+          "isReadOnly": false,
+          "tiles": [
+            {
+              "id": "d7f6f7cc-8ceb-40a6-ac14-94398039dde4",
+              "title": "Hits by Browser",
+              "subTitle": "",
+              "reportId": "269a3e1d-7d5b-4438-96e8-d337ed1ed4b9",
+              "datasetId": "e56a7ed2-bbe8-4392-9932-b420d7b4cceb"
+            },
+            {
+              "id": "e3d9d0da-9499-42dd-b907-4e030ab5c808",
+              "title": "Site Traffic (Last 30 days)",
+              "subTitle": "",
+              "reportId": "3e7be81a-3fb4-4cac-98db-c764f14d88b6",
+              "datasetId": "ba541f8e-3d18-48bb-8b86-3c358577a3d5"
+            },
+            {
+              "id": "d87451cc-5636-4308-8f62-852da7826afb",
+              "title": "Sessions by Day of Week",
+              "subTitle": "",
+              "reportId": "afdb57d7-32da-4489-a951-82f9a91041aa",
+              "datasetId": "a50593b7-8916-41a5-b413-9c96ae91477a"
+            },
+            {
+              "id": "79d71712-5b02-4257-9a35-f6689d26166b",
+              "title": "Average of Page Load Time (sec)",
+              "subTitle": "",
+              "reportId": "4ef66e81-d49e-481f-a533-d1e8a52b0ce4",
+              "datasetId": "b23b1e95-4831-4415-99c2-d8375bff18bf"
+            },
+            {
+              "id": "0dc20a3e-72cb-4446-903f-6cae726522c9",
+              "title": "Avg. Session Duration (sec)",
+              "reportId": "1bbe0659-a521-4c3d-ac58-9c6fee784ebf",
+              "datasetId": "02ec19c0-9156-4520-a9e1-f2bfc54097c2"
+            },
+            {
+              "id": "611a50ba-a4f4-4d0a-aa1e-15021ea6fd99",
+              "title": "Bounces (Last 30 days)",
+              "reportId": "cdeb5472-2643-41a9-a662-9ee8f4ac85ee",
+              "datasetId": "d9b42d07-41db-4a02-a52e-ef0e1e3eaa56"
+            },
+            {
+              "id": "88bf1425-71b4-4f5b-b0cd-9f3f1020dd1a",
+              "title": "Top Pages by Unique Page Views",
+              "reportId": "01d8e001-f853-449f-ade3-0e88d9519ab3",
+              "datasetId": "57418d15-b0a8-452e-bebd-5b272830f8ab"
+            },
+            {
+              "id": "2a72dcb1-5bba-4ca8-b202-89d796eeb1e1",
+              "title": "Sessions (Last 30 days)",
+              "reportId": "340bee85-aa95-412f-a69c-349f154c52c1",
+              "datasetId": "5db9dce9-0a86-4907-ad83-37a32e50a013"
+            },
+            {
+              "id": "bb13ec59-de47-42ac-b460-2ef257286be0",
+              "title": "New Users % Growth",
+              "subTitle": "30 day period",
+              "reportId": "a2f519d9-e741-449b-8911-588642ffb350",
+              "datasetId": "3a104d82-fa48-46cf-9686-aeb24f378fa2"
+            },
+            {
+              "id": "c6778446-8e14-4ba8-9f83-16023c9bf1e0",
+              "title": "Avg. Daily New Users (Last 30 days)",
+              "reportId": "945eaff0-3c07-4037-90d7-4d581364db16",
+              "datasetId": "ea01059e-0324-472f-8070-ea42c22a09f5"
+            },
+            {
+              "id": "bbb0155d-4add-4d50-bde4-9b0bb05e19ce",
+              "title": "Avg. Daily Users (weekday)",
+              "subTitle": "Last 30 days",
+              "reportId": "61b82b74-f3e5-41a8-b3a0-e9d91796ebe8",
+              "datasetId": "65316f17-48db-4461-b23b-48003f2a9552"
+            },
+            {
+              "id": "0df0015c-915b-412d-ae16-03c8a2b9ec29",
+              "reportId": "924dacb6-618c-47a5-af28-cef73773d39f",
+              "datasetId": "5ef79a8f-7e1b-4de2-8425-925fec319872"
+            }
+          ]
+        }
+      ],
+      "datasets": [
+        {
+          "id": "5caf027e-123d-4618-bddf-fdb7f5374aee",
+          "name": "Google Analytics",
+          "tables": [],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "17cf23ea-223b-4c69-8afb-7e79c87e47da",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "Abf",
+          "createdDate": "2017-04-07T16:03:55.353",
+          "contentProviderType": "Unknown",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "13c092dc-3a64-4276-858c-0351a462a506"
+            }
+          ],
+          "schemaRetrievalError": "Unsupported request. Full Fidelity Excel dataset are not supported."
+        },
+        {
+          "id": "9ae4e149-0f3c-45ee-8a5e-449ebc5bdbf9",
+          "name": "anotherdomain - Google Analytics",
+          "tables": [],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "35443f0b-0838-4b69-8bee-18d94e3a7946",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "Abf",
+          "createdDate": "2017-04-07T20:24:50.36",
+          "contentProviderType": "Unknown",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "db0c59d3-edd5-4042-82d4-262bea6b61d6"
+            }
+          ],
+          "schemaRetrievalError": "Unsupported request. Full Fidelity Excel dataset are not supported."
+        }
+      ],
+      "dataflows": [],
+      "datamarts": [],
+      "users": null
+    },
+    {
+      "id": "1e1a7dea-31d2-462b-b2c0-139506c7503f",
+      "name": "Drive Recording",
+      "type": "Workspace",
+      "state": "Active",
+      "isOnDedicatedCapacity": true,
+      "capacityId": "28dfa545-264e-4720-afbc-8598f0a20dfb",
+      "defaultDatasetStorageFormat": "Small",
+      "reports": [
+        {
+          "reportType": "PowerBIReport",
+          "id": "0a7a1e08-f7b9-40ee-80e8-c5deb0ee19b7",
+          "name": "Drive Log",
+          "datasetId": "b1e3075a-2eda-4a77-9f55-7d708573ee88",
+          "users": [
+            {
+              "reportUserAccessRight": "Owner",
+              "emailAddress": null,
+              "displayName": "Drive Recording",
+              "identifier": "ea975e45-319a-48e6-a320-f65558717d61",
+              "graphId": "28eaa0e6-f7db-4216-bd03-d5eaea0f89d4",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "reportUserAccessRight": "Owner",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "0789ff6c-53de-49f1-851d-16fb3bd11d4b",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        }
+      ],
+      "dashboards": [],
+      "datasets": [
+        {
+          "id": "db172a8d-b797-4481-9dd8-e429490dc179",
+          "name": "Drive Log",
+          "tables": [],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "6e82c3f7-9904-4da4-a6e0-7ad6bbe9ea6f",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "Abf",
+          "createdDate": "2017-04-07T15:00:19.36",
+          "contentProviderType": "Unknown",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "156f0c14-dade-4494-9be4-12b725a517cd"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "Drive Recording",
+              "identifier": "8a1a304b-673b-4883-9090-a26528827260",
+              "graphId": "6638abef-4fb6-4be4-a507-e94b60874be4",
+              "principalType": "Group",
+              "userType": null
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "79155674-eb04-4ae1-a151-a77092ce937f",
+              "principalType": "User",
+              "userType": "Member"
+            }
+          ]
+        },
+        {
+          "id": "02d18de3-512f-459c-b7c5-4ba9ba40ecc0",
+          "name": "AnotherSampleDataMart",
+          "tables": [
+            {
+              "name": "Calculator",
+              "columns": [
+                {
+                  "name": "Column1",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column2",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column3",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column4",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column5",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column6",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column7",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column8",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column9",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column10",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column11",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column12",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column13",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column14",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column15",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column16",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false,
+              "source": [
+                {
+                  "expression": "let\n    Source = Sql.Database(\"gyfdegswvflibrds.datamart.pbidedicated.windows.net\", \"datamart\"),\n    table = Source{[Schema = \"model\", Item = \"Calculator\"]}[Data]\nin\n    table"
+                }
+              ]
+            },
+            {
+              "name": "Ingredients",
+              "columns": [
+                {
+                  "name": "Column1",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column2",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column3",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column4",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column5",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false,
+              "source": [
+                {
+                  "expression": "let\n    Source = Sql.Database(\"gyfdegswvflibrds.datamart.pbidedicated.windows.net\", \"datamart\"),\n    table = Source{[Schema = \"model\", Item = \"Ingredients\"]}[Data]\nin\n    table"
+                }
+              ]
+            },
+            {
+              "name": "Menu",
+              "columns": [
+                {
+                  "name": "Column1",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column2",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column3",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column4",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column5",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column6",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column7",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column8",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column9",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column10",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column11",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column12",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column13",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false,
+              "source": [
+                {
+                  "expression": "let\n    Source = Sql.Database(\"gyfdegswvflibrds.datamart.pbidedicated.windows.net\", \"datamart\"),\n    table = Source{[Schema = \"model\", Item = \"Menu\"]}[Data]\nin\n    table"
+                }
+              ]
+            },
+            {
+              "name": "Dinner",
+              "columns": [
+                {
+                  "name": "Column1",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column2",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column3",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column4",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column5",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column6",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column7",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                },
+                {
+                  "name": "Column8",
+                  "dataType": "String",
+                  "isHidden": false,
+                  "columnType": "Data"
+                }
+              ],
+              "measures": [],
+              "isHidden": false,
+              "source": [
+                {
+                  "expression": "let\n    Source = Sql.Database(\"gyfdegswvflibrds.datamart.pbidedicated.windows.net\", \"datamart\"),\n    table = Source{[Schema = \"model\", Item = \"Dinner\"]}[Data]\nin\n    table"
+                }
+              ]
+            }
+          ],
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "e525187e-e298-4b7b-80a7-12b839991948",
+          "isEffectiveIdentityRequired": false,
+          "isEffectiveIdentityRolesRequired": false,
+          "targetStorageMode": "Abf",
+          "createdDate": "2023-12-08T00:07:07.377",
+          "contentProviderType": "InDirectQueryMode",
+          "upstreamDatamarts": [
+            {
+              "targetDatamartId": "5a2954b9-c373-4faf-8a85-1521134d7307",
+              "groupId": "d9a73e16-e84b-4be6-ac23-698392224404"
+            }
+          ],
+          "users": [
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "53bf7772-8b36-42b3-a0b8-c8136e50b872",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datasetUserAccessRight": "ReadWriteReshareExplore",
+              "emailAddress": null,
+              "displayName": "Drive Recording",
+              "identifier": "8515facc-d609-4df8-b590-118a5bb03bcb",
+              "graphId": "a69ebef0-f2f1-4862-b37c-41318b70129d",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        }
+      ],
+      "dataflows": [],
+      "datamarts": [
+        {
+          "id": "edbb4ad8-8b2a-4350-a78c-b1407346ffae",
+          "name": "AnotherSampleDataMart",
+          "type": "Sql",
+          "configuredBy": "user1.surname@domain.com",
+          "configuredById": "f69f96f8-85ec-4a49-8a9b-37a7ab58da61",
+          "modifiedBy": "user1.surname@domain.com",
+          "modifiedById": "07a9617f-4331-416c-bd28-04df9536da69",
+          "modifiedDateTime": "2023-12-08T00:10:09.227",
+          "datasourceUsages": [
+            {
+              "datasourceInstanceId": "78a8e9a0-3a6b-426e-85f3-24184db69cf8"
+            }
+          ],
+          "users": [
+            {
+              "datamartUserAccessRight": "ReadWriteReshare",
+              "emailAddress": "user1.surname@domain.com",
+              "displayName": "user1 surname",
+              "identifier": "user1.surname@domain.com",
+              "graphId": "8d43dbdd-7213-4bcf-9002-9a7b500899a4",
+              "principalType": "User",
+              "userType": "Member"
+            },
+            {
+              "datamartUserAccessRight": "ReadWriteReshare",
+              "emailAddress": null,
+              "displayName": "Drive Recording",
+              "identifier": "518fe733-8330-41ac-bea4-266081d432d6",
+              "graphId": "4587133f-ba68-4f6d-9610-66c2bbd4ec11",
+              "principalType": "Group",
+              "userType": null
+            }
+          ]
+        }
+      ],
+      "users": [
+        {
+          "groupUserAccessRight": "Admin",
+          "emailAddress": "user1.surname@domain.com",
+          "displayName": "user1 surname",
+          "identifier": "user1.surname@domain.com",
+          "graphId": "0c78b87c-018b-4e9d-98f3-5f317fb3ed94",
+          "principalType": "User",
+          "userType": "Member"
+        },
+        {
+          "groupUserAccessRight": "Member",
+          "emailAddress": null,
+          "displayName": "Drive Recording",
+          "identifier": "38af0193-1b04-4697-89aa-2720e09ecef8",
+          "graphId": "47892c50-3624-4751-b597-d0f895ce2c59",
+          "principalType": "Group",
+          "userType": null
+        }
+      ]
+    },
+    {
+      "id": "1bc014fd-26b7-4e66-9c1a-91ec13a1015b",
+      "name": "PersonalWorkspace user1",
+      "type": "Personal",
+      "state": "Active",
+      "isOnDedicatedCapacity": false,
+      "reports": [],
+      "dashboards": [],
+      "datasets": [],
+      "dataflows": [],
+      "datamarts": [],
+      "users": [
+        {
+          "groupUserAccessRight": "Admin",
+          "emailAddress": "user1.surname@domain.com",
+          "displayName": "user1 surname",
+          "identifier": "user1.surname@domain.com",
+          "graphId": "9598b1fa-e970-4f10-a956-43c8158762ec",
+          "principalType": "User",
+          "userType": "Member"
+        }
+      ]
+    },
+    {
+      "id": "addd263c-2d01-4323-9d35-60f9e502fea5",
+      "name": "PersonalWorkspace user2",
+      "type": "Personal",
+      "state": "Active",
+      "isOnDedicatedCapacity": false,
+      "reports": [],
+      "dashboards": [],
+      "datasets": [],
+      "dataflows": [],
+      "datamarts": [],
+      "users": [
+        {
+          "groupUserAccessRight": "Admin",
+          "emailAddress": "user2.surname@domain.com",
+          "displayName": "user2 surname",
+          "identifier": "user2.surname@domain.com",
+          "graphId": "390e1bac-6283-4f49-9cd5-dbae61ea4aa7",
+          "principalType": "User",
+          "userType": "Member"
+        }
+      ]
+    },
+    {
+      "id": "3cc96b65-c018-4984-96e4-c8574c5e9fc2",
+      "name": "PPU Workspace",
+      "description": "A workspace of great potential",
+      "type": "Workspace",
+      "state": "Active",
+      "isOnDedicatedCapacity": true,
+      "capacityId": "324cd43a-da85-4231-80a2-42e998532ace",
+      "defaultDatasetStorageFormat": "Large",
+      "domainId": "85098d2a-e3e6-4ffc-86d8-f9dcbb7bf837",
+      "reports": [],
+      "dashboards": [],
+      "datasets": [],
+      "dataflows": [],
+      "datamarts": [],
+      "users": [
+        {
+          "groupUserAccessRight": "Admin",
+          "emailAddress": "user1.surname@domain.com",
+          "displayName": "user1 surname",
+          "identifier": "user1.surname@domain.com",
+          "graphId": "c3f4561f-304a-47ba-b6dc-085a3c84afb5",
+          "principalType": "User",
+          "userType": "Member"
+        }
+      ]
+    }
+  ],
+  "datasourceInstances": [
+    {
+      "datasourceType": "Web",
+      "connectionDetails": {
+        "url": "https://domain-my.sharepoint.com/personal/user1_surname_domain_com/"
+      },
+      "datasourceId": "454a1401-2e43-47cb-a6ca-0de163e0ac87",
+      "gatewayId": "31ca4641-07c8-4279-915b-400f18b1d05c"
+    },
+    {
+      "datasourceType": "File",
+      "connectionDetails": {
+        "path": "E:\\Personal Projects\\Power BI\\2017 Garden.xlsx"
+      },
+      "datasourceId": "0cea2d3e-0dc7-4032-8b67-1ca063661537",
+      "gatewayId": "e5e3fe42-5bc5-428a-9ce0-c08c7b0ec4e5"
+    },
+    {
+      "datasourceType": "Sql",
+      "connectionDetails": {
+        "server": "localhost\\dev2016",
+        "database": "Datawarehouse"
+      },
+      "datasourceId": "01fb57d7-731e-42ef-b1c6-c88103dd8231",
+      "gatewayId": "9547afb2-d5b2-4114-9d8b-dd538c4a1a6a"
+    },
+    {
+      "datasourceType": "GoogleAnalytics",
+      "datasourceId": "f0fb5040-934a-4b67-876f-bec0d0961450",
+      "gatewayId": "d2578bc8-e474-4ef3-99af-3c9f92f5eb0d"
+    },
+    {
+      "datasourceType": "File",
+      "connectionDetails": {
+        "path": "E:\\Personal Projects\\Power BI\\Drive Logs.xlsx"
+      },
+      "datasourceId": "8dab767e-d7c3-46d1-8945-0ae2fdf58bcc",
+      "gatewayId": "b968878f-c519-4438-9b3a-13a0de1a2fd1"
+    }
+  ]
+}

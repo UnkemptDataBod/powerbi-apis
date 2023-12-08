@@ -1,3 +1,4 @@
+
 # powerbi-apis
 This is initially to provide a base for schema validation and as a reference for future usage of the APIs. 
 
@@ -30,3 +31,8 @@ Would welcome contributions
 https://guidgenerator.com/
 
 https://www.jsongenerator.io/schema
+
+# Other useful references
+* [microsoft / powerbi-powershell](https://github.com/microsoft/powerbi-powershell) repo
+
+* [microsoft /  PowerBI-CSharp](https://github.com/microsoft/PowerBI-CSharp) repo

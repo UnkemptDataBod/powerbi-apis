@@ -4,6 +4,7 @@
   "properties": {
     "tenantSettings": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "required": [
           "settingName",
@@ -14,16 +15,132 @@
         ],
         "properties": {
           "settingName": {
-            "type": "string"
+            "type": "string",
+            "description": "Unique identifier for the setting",
+            "enum": ["AllowServicePrincipalsUseReadAdminAPIs",
+            "AdminApisIncludeDetailedMetadata",
+            "AdminApisIncludeExpressions",
+            "AllowAccessOverPrivateLinks",
+            "BlockAccessFromPublicNetworks",
+            "UsageMetrics",
+            "UsageMetricsTrackUserLevelInfo",
+            "LogAnalyticsAttachForWorkspaceAdmins",
+            "AutomatedInsightsTenant",
+            "AutomatedInsightsEntryPoints",
+            "CDSAManagement",
+            "TemplatePublish",
+            "AppPush",
+            "PublishContentPack",
+            "CustomVisualsTenant",
+            "CertifiedCustomVisualsTenant",
+            "AllowCVToExportDataToFileTenant",
+            "WebContentTilesTenant",
+            "DatamartTenant",
+            "WebModelingTenantSwitch",
+            "BlockAutoDiscoverAndPackageRefresh",
+            "Embedding",
+            "ServicePrincipalAccess",
+            "AllowServicePrincipalsCreateAndUseProfiles",
+            "BlockResourceKeyAuthentication",
+            "DiscoverDatasetsSettingsPromoted",
+            "DiscoverDatasetsSettingsCertified",
+            "DiscoverDatasetsConsumption",
+            "AllowGuestUserToAccessSharedContent",
+            "ExternalSharingV2",
+            "ElevatedGuestsTenant",
+            "AllowGuestLookup",
+            "PublishToWeb",
+            "ExportVisualImageTenant",
+            "ExportToExcelSetting",
+            "ExportToCsv",
+            "ExportReport",
+            "LiveConnection",
+            "ExportToPowerPoint",
+            "ExportToMHTML",
+            "ExportToWord",
+            "ExportToXML",
+            "ExportToImage",
+            "Printing",
+            "CertifyDatasets",
+            "EmailSubscriptionTenant",
+            "EmailSubscriptionsToB2BUsers",
+            "EmailSubscriptionsToExternalUsers",
+            "PromoteContent",
+            "EnableExcelYellowIntegration",
+            "ShareLinkToEntireOrg",
+            "ShareToTeamsTenant",
+            "AutoInstallPowerBIAppInTeamsTenant",
+            "StorytellingTenant",
+            "AllowPowerBIASDQOnTenant",
+            "ExternalDatasetSharingTenant",
+            "EnableDatasetInPlaceSharing",
+            "GitIntegrationTenantSwitch",
+            "GitIntegrationCrossGeoTenantSwitch",
+            "GitIntegrationSensitivityLabelsTenantSwitch",
+            "PowerBIGoalsTenant",
+            "TenantSettingPublishGetHelpInfo",
+            "EmailSecurityGroupsOnOutage",
+            "AllowFreeTrial",
+            "AdminCustomDisclaimer",
+            "EimInformationProtectionEdit",
+            "EimInformationProtectionDataSourceInheritanceSetting",
+            "EimInformationProtectionDownstreamInheritanceSetting",
+            "EimInformationProtectionWorkspaceAdminsOverrideAutomaticLabelsSetting",
+            "BlockProtectedLabelSharingToEntireOrg",
+            "OnPremAnalyzeInExcel",
+            "DatasetExecuteQueries",
+            "EsriVisual",
+            "ArtifactSearchTenant",
+            "AzureMap",
+            "BingMap",
+            "VisualizeListInPowerBI",
+            "DremioSSO",
+            "SnowflakeSSO",
+            "RedshiftSSO",
+            "GoogleBigQuerySSO",
+            "OracleSSO",
+            "AADSSOForGateway",
+            "PowerPlatformSolutionsIntegrationTenant",
+            "OneDriveSharePointViewerIntegrationTenantSettingV2",
+            "OneDriveSharePointAllowSharingTenantSetting",
+            "ASShareableCloudConnectionBindingSecurityModeTenant",
+            "ASWritethruContinuousExportTenantSwitch",
+            "ASWritethruTenantSwitch",
+            "ODSPRefreshEnforcementTenantAllowAutomaticUpdate",
+            "M365DataSharing",
+            "TridentPrivatePreview",
+            "FabricGAWorkloads",
+            "OneLakeForThirdParty",
+            "OneLakeFileExplorer",
+            "QnaFeedbackLoop",
+            "QnaLsdlSharing",
+            "EnableNLToDax",
+            "AllowSendNLToDaxDataToOtherRegions",
+            "RScriptVisual",
+            "QueryScaleOutTenant",
+            "DevelopServiceApps",
+            "InstallServiceApps",
+            "InstallNonvalidatedTemplateApps",
+            "ExpFlightingTenant",
+            "CreateAppWorkspaces",
+            "UseDatasetsAcrossWorkspaces",
+            "RestrictMyFolderCapacity",
+            "ConfigureFolderRetentionPeriod"
+            ]
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "description": "Name as it appears in the admin portal (https://app.powerbi.com/admin-portal/tenantSettings)"
           },
           "enabled": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "The state of the tenant setting, 0 = Disabled, 1 = Enabled",
+            "enum": [0,1]
           },
           "canSpecifySecurityGroups": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Indicates if the tenant setting is enabled for a security group. 0 - The tenant setting is enabled for the entire organization. 1 - The tenant setting is enabled for security groups.",
+            "enum": [0,1]
           },
           "enabledSecurityGroups": {
             "type": "array",
@@ -34,16 +151,49 @@
               ],
               "properties": {
                 "graphId": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "The graph ID of the security group."
                 },
                 "name": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "The name of the security group."
                 }
               }
             }
           },
           "tenantSettingGroup": {
-            "type": "string"
+            "type": "string",
+            "description": "Tenant setting group name as shown in the admin portal",
+            "enum": ["Admin API settings",
+            "Advanced networking",
+            "Audit and usage settings",
+            "Insights settings",
+            "Gen1 dataflow settings",
+            "Content pack and app settings",
+            "Power BI visuals",
+            "Dashboard settings",
+            "Datamart settings",
+            "Data model settings",
+            "Semantic Model Security",
+            "Developer settings",
+            "Discovery settings",
+            "Export and sharing settings",
+            "Git integration",
+            "Metrics settings",
+            "Help and support settings",
+            "Information protection",
+            "Integration settings",
+            "Share data with your Microsoft 365 services",
+            "Microsoft Fabric",
+            "OneLake settings",
+            "Q&A settings",
+            "Quick measure suggestions",
+            "R and Python visuals settings",
+            "Scale-out settings",
+            "Template app settings",
+            "User experience experiments",
+            "Workspace settings"
+          ]
           }
         }
       }
