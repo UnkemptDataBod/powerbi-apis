@@ -1,0 +1,1207 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "activityEventEntities": {
+      "type": "array",
+      "items": {
+        "required": [
+          "Id",
+          "RecordType",
+          "CreationTime",
+          "Operation",
+          "Activity",
+          "ActivityId"
+        ],
+        "properties": {
+          "Id": {
+            "type": "string"
+          },
+          "AccessRequestMessage": {
+            "type": "string"
+          },
+          "AccessRequestType": {
+            "type": "string"
+          },
+          "ActionSource": {
+            "type": "string"
+          },
+          "RecordType": {
+            "type": "number"
+          },
+          "CreationTime": {
+            "type": "string"
+          },
+          "Operation": {
+            "type": "string"
+          },
+          "OrganizationId": {
+            "type": "string"
+          },
+          "OrganizationalGalleryItemDisplayName": {
+            "type": "string"
+          },
+          "OrganizationalGalleryItemId": {
+            "type": "string"
+          },
+          "OrganizationalGalleryItemPublishTime": {
+            "type": "string"
+          },
+          "PackageId": {
+            "type": "string"
+          },
+          "UserType": {
+            "type": "number"
+          },
+          "UserKey": {
+            "type": "string"
+          },
+          "Workload": {
+            "type": "string"
+          },
+          "AggregatedWorkspaceInformation": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "WorkspaceCount": {
+                  "type": "number"
+                },
+                "WorkspacesByCapacitySku": {
+                  "type": "string"
+                },
+                "WorkspacesByType": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "WorkspaceAccessList": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "UserAccessList": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "GroupUserAccessRight": {
+                        "type": "number"
+                      },
+                      "Identifier": {
+                        "type": "number"
+                      },
+                      "PrincipalType": {
+                        "type": "number"
+                      },
+                      "UserEmailAddress": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                },
+                "WorkspaceId": {
+                  "type": "number"
+                }
+              }
+            }
+          },
+          "PaginatedReportDataSources": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "connectionString": {
+                  "type": "number"
+                },
+                "credentialRetrievalType": {
+                  "type": "string"
+                },
+                "dMMoniker": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "PinReportToTabInformation": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "ChannelId": {
+                  "type": "number"
+                },
+                "ChannelName": {
+                  "type": "string"
+                },
+                "DatasetId": {
+                  "type": "string"
+                },
+                "DatasetName": {
+                  "type": "string"
+                },
+                "ReportId": {
+                  "type": "string"
+                },
+                "ReportName": {
+                  "type": "string"
+                },
+                "TabName": {
+                  "type": "string"
+                },
+                "TeamId": {
+                  "type": "string"
+                },
+                "TeamName": {
+                  "type": "string"
+                },
+                "TeamsAppId": {
+                  "type": "string"
+                },
+                "UserId": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Datasets": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "DatasetId": {
+                  "type": "string"
+                },
+                "DatasetName": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "OrgAppPermission": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "permissions": {
+                  "type": "string"
+                },
+                "recipients": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "UserInformation": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "UsersAdded": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                    }
+                  }
+                },
+                "UsersRemoved": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "AuditedArtifactInformation": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "AnnotatedItemType": {
+                  "type": "string"
+                },
+                "ArtifactObjectId": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "DataflowAccessTokenRequestParameters": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "entityName": {
+                  "type": "string"
+                },
+                "partitionUri": {
+                  "type": "string"
+                },
+                "permissions": {
+                  "type": "string"
+                },
+                "tokenLifetimeInMinutes": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "DatasourceInformations": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "CredentialType": {
+                  "type": "string"
+                },
+                "DatasourceObjectId": {
+                  "type": "string"
+                },
+                "DatasourceReference": {
+                  "type": "string"
+                },
+                "GatewayObjectId": {
+                  "type": "string"
+                },
+                "SingleSignOnType": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Datasources": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "ConnectionDetails": {
+                  "type": "string"
+                },
+                "DatasourceType": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "GitIntegrationRequest": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "AddedArtifacts": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "LogicalId": {
+                        "type": "string"
+                      },
+                      "ObjectId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "DeletedArtifacts": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "LogicalId": {
+                        "type": "string"
+                      },
+                      "ObjectId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "ModifiedArtifacts": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "LogicalId": {
+                        "type": "string"
+                      },
+                      "ObjectId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "BranchName": {
+                  "type": "string"
+                },
+                "FromCommitId": {
+                  "type": "string"
+                },
+                "OrganizationName": {
+                  "type": "string"
+                },
+                "ProjectName": {
+                  "type": "string"
+                },
+                "RepositoryName": {
+                  "type": "string"
+                },
+                "RootDirectory": {
+                  "type": "string"
+                },
+                "ToCommitId": {
+                  "type": "string"
+                },
+                "WorkspaceId": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "DeploymentPipelineAccesses": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "GroupObjectId": {
+                  "type": "string"
+                },
+                "RolePermissions": {
+                  "type": "string"
+                },
+                "TenantId": {
+                  "type": "string"
+                },
+                "UserId": {
+                  "type": "string"
+                },
+                "UserObjectId": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "ExportedArtifactInfo": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "ArtifactId": {
+                  "type": "string"
+                },
+                "ArtifactType": {
+                  "type": "string"
+                },
+                "ExportType": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "FolderAccessRequests": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "GroupId": {
+                  "type": "string"
+                },
+                "GroupObjectId": {
+                  "type": "string"
+                },
+                "RolePermissions": {
+                  "type": "string"
+                },
+                "UserId": {
+                  "type": "string"
+                },
+                "UserObjectId": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "GatewayClusterDatasources": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "clusterId": {
+                  "type": "string"
+                },
+                "credentialType": {
+                  "type": "string"
+                },
+                "datasourceName": {
+                  "type": "string"
+                },
+                "datasourceType": {
+                  "type": "string"
+                },
+                "gatewayClusterName": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "identifier": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "credentialDetails": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "credentialType": {
+                        "type": "string"
+                      },
+                      "encryptedConnection": {
+                        "type": "string"
+                      },
+                      "encryptionAlgorithm": {
+                        "type": "string"
+                      },
+                      "isCredentialEncrypted": {
+                        "type": "string"
+                      },
+                      "privacyLevel": {
+                        "type": "string"
+                      },
+                      "skipTestConnection": {
+                        "type": "string"
+                      },
+                      "useCustomOAuthApp": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ExternalResource": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "ResourceType": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "InstallTeamsAnalyticsInformation": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "ModelId": {
+                  "type": "string"
+                },
+                "TenantId": {
+                  "type": "string"
+                },
+                "UserId": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "SubscribeeInformation": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "ObjectId": {
+                  "type": "string"
+                },
+                "RecipientEmail": {
+                  "type": "string"
+                },
+                "RecipientName": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "SubscriptionDetails": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "attachmentType": {
+                  "type": "string"
+                },
+                "subject": {
+                  "type": "string"
+                },
+                "subscriptionObjectId": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "SubscriptionSchedule": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "Time": {
+                  "type": "array",
+                  "items": {}
+                },
+                "WeekDays": {
+                  "type": "array",
+                  "items": {}
+                },
+                "DaysOfTheMonth": {
+                  "type": "string"
+                },
+                "EndDate": {
+                  "type": "string"
+                },
+                "StartDate": {
+                  "type": "string"
+                },
+                "TimeZone": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "ExternalSubscribeeInformation": {
+            "type": "array",
+            "description": "Assume due to misspelling this was a mistake made at some point",
+            "items": {}
+          },
+          "FolderDisplayName": {
+            "type": "string"
+          },
+          "SwitchState": {
+            "type": "string"
+          },
+          "TableName": {
+            "type": "string"
+          },
+          "TargetWorkspaceId": {
+            "type": "string"
+          },
+          "TemplateAppFolderObjectId": {
+            "type": "string"
+          },
+          "TemplateAppIsInstalledWithAutomation": {
+            "type": "string"
+          },
+          "TemplateAppObjectId": {
+            "type": "string"
+          },
+          "TemplateAppOwnerTenantObjectId": {
+            "type": "string"
+          },
+          "TemplateAppPackageObjectId": {
+            "type": "string"
+          },
+          "TemplateAppVersion": {
+            "type": "string"
+          },
+          "TemplatePackageName": {
+            "type": "string"
+          },
+          "TileText": {
+            "type": "string"
+          },
+          "FolderObjectId": {
+            "type": "string"
+          },
+          "DeploymentPipelineDisplayName": {
+            "type": "string"
+          },
+          "DeploymentPipelineId": {
+            "type": "string"
+          },
+          "DeploymentPipelineObjectId": {
+            "type": "string"
+          },
+          "DeploymentPipelineStageOrder": {
+            "type": "string"
+          },
+          "DatasourceObjectIds": {
+            "type": "array",
+            "items": {}
+          },
+          "DatasourceDetails": {
+            "type": "string"
+          },
+          "DatasourceId": {
+            "type": "string"
+          },
+          "DataflowId": {
+            "type": "string"
+          },
+          "DataflowName": {
+            "type": "string"
+          },
+          "DataflowAllowNativeQueries": {
+            "type": "string"
+          },
+          "DataflowRefreshScheduleType": {
+            "type": "string"
+          },
+          "DataflowType": {
+            "type": "string"
+          },
+          "GatewayClusterId": {
+            "type": "string"
+          },
+          "GatewayClusters": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "memberGatewaysIds": {
+                  "type": "array",
+                  "items": {}
+                },
+                "permissions": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "principalType": {
+                        "type": "string"
+                      },
+                      "role": {
+                        "type": "string"
+                      },
+                      "allowedDataSources": {
+                        "type": "array",
+                        "items": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "GatewayClustersObjectIds": {
+            "type": "array",
+            "items": {}
+          },
+          "GatewayId": {
+            "type": "string"
+          },
+          "GatewayMemberId": {
+            "type": "string"
+          },
+          "GatewayName": {
+            "type": "string"
+          },
+          "GatewayState": {
+            "type": "string"
+          },
+          "GatewayStatus": {
+            "type": "string"
+          },
+          "GatewayType": {
+            "type": "string"
+          },
+          "HasFullReportAttachment": {
+            "type": "string"
+          },
+          "ImportDisplayName": {
+            "type": "string"
+          },
+          "ImportSource": {
+            "type": "string"
+          },
+          "ImportType": {
+            "type": "string"
+          },
+          "IncludeExpressions": {
+            "type": "string"
+          },
+          "IsDiscoverable": {
+            "type": "string"
+          },
+          "IncludeSubartifacts": {
+            "type": "string"
+          },
+          "AppDashboardId": {
+            "type": "string"
+          },
+          "AppId": {
+            "type": "string"
+          },
+          "AppName": {
+            "type": "string"
+          },
+          "AppReportId": {
+            "type": "string"
+          },
+          "UserId": {
+            "type": "string"
+          },
+          "ArtifactAccessRequestInfo": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "AccessRequestAction": {
+                  "type": "string"
+                },
+                "ArtifactLocationObjectId": {
+                  "type": "string"
+                },
+                "RequestId": {
+                  "type": "string"
+                },
+                "RequesterUserObjectId": {
+                  "type": "string"
+                },
+                "TenantObjectId": {
+                  "type": "string"
+                },
+                "WorkspaceName": {
+                  "type": "string"
+                },
+                "ArtifactOwnerInformation": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "EmailAddress": {
+                        "type": "string"
+                      },
+                      "UserObjectId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ClientIP": {
+          "type": "string"
+        },
+        "UserAgent": {
+          "type": "string"
+        },
+        "Activity": {
+          "type": "string"
+        },
+        "ItemName": {
+          "type": "string"
+        },
+        "ItemNewName": {
+          "type": "string"
+        },
+        "ItemsCount": {
+          "type": "string"
+        },
+        "LabelEventType": {
+          "type": "string"
+        },
+        "LastRefreshTime": {
+          "type": "string"
+        },
+        "Lineage": {
+          "type": "string"
+        },
+        "MentionedUsersInformation": {
+          "type": "string"
+        },
+        "ModelId": {
+          "type": "string"
+        },
+        "Monikers": {
+          "type": "array",
+          "items": {}
+        },
+        "ModelsSnapshots": {
+          "type": "array",
+          "items": {}
+        },
+        "NotificationSettings": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "Email": {
+                "type": "boolean"
+              },
+              "Microsoft Teams": {
+                "type": "boolean"
+              },
+              "NotificationType": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "MonikerDatasourcesInformation": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "DatasourceInformations": {
+                "type": "array",
+                "items": {
+                  "properties": {
+                    "CredentialType": {
+                      "type": "string"
+                    },
+                    "DatasourceObjectId": {
+                      "type": "string"
+                    },
+                    "DatasourceReference": {
+                      "type": "string"
+                    },
+                    "GatewayObjectId": {
+                      "type": "string"
+                    },
+                    "SingleSignOnType": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "MonikerName": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "ObjectDisplayName": {
+          "type": "string"
+        },
+        "WorkSpaceName": {
+          "type": "string"
+        },
+        "DatasetName": {
+          "type": "string"
+        },
+        "ReportName": {
+          "type": "string"
+        },
+        "CapacityId": {
+          "type": "string"
+        },
+        "CapacityName": {
+          "type": "string"
+        },
+        "CapacityState": {
+          "type": "string"
+        },
+        "CapacityUsers": {
+          "type": "string"
+        },
+        "CredentialSetupMode": {
+          "type": "string"
+        },
+        "CustomVisualAccessTokenEtag": {
+          "type": "string"
+        },
+        "CustomVisualAccessTokenResourceId": {
+          "type": "string"
+        },
+        "CustomVisualAccessTokenSiteUri": {
+          "type": "string"
+        },
+        "WorkspaceId": {
+          "type": "string"
+        },
+        "ObjectId": {
+          "type": "string"
+        },
+        "ObjectType": {
+          "type": "string"
+        },
+        "OldSensitivityLabelId": {
+          "type": "string"
+        },
+        "PowerPlatformEnvironmentId": {
+          "type": "string"
+        },
+        "PowerPlatformSolutionRequest": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "DatasetIds": {
+                "type": "array",
+                "items": {}
+              },
+              "FolderIds": {
+                "type": "array",
+                "items": {}
+              },
+              "ReportIds": {
+                "type": "array",
+                "items": {}
+              },
+              "EnvironmentId": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "Schedules": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "Days": {
+                "type": "array",
+                "items": {}
+              },
+              "Time": {
+                "type": "array",
+                "items": {}
+              },
+              "RefreshFrequency": {
+                "type": "string"
+              },
+              "TimeZone": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "SensitivityLabelEventData": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "ActionSource": {
+                "type": "string"
+              },
+              "ActionSourceDetail": {
+                "type": "string"
+              },
+              "LabelEventType": {
+                "type": "string"
+              },
+              "OldSensitivityLabelId": {
+                "type": "string"
+              },
+              "SensitivityLabelId": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "SensitivityLabelId": {
+          "type": "string"
+        },
+        "ShareLinkId": {
+          "type": "string"
+        },
+        "ShareWithCurrentFilter": {
+          "type": "string"
+        },
+        "SharingAction": {
+          "type": "string"
+        },
+        "SharingInformation": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "ObjectId": {
+                "type": "string"
+              },
+              "RecipientEmail": {
+                "type": "string"
+              },
+              "RecipientName": {
+                "type": "string"
+              },
+              "ResharePermission": {
+                "type": "string"
+              },
+              "TenantObjectId": {
+                "type": "string"
+              },
+              "UserPrincipalName": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "UpdateDatasourcesRequest": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "DatasourceSelector": {
+                "type": "array",
+                "items": {
+                  "properties": {
+                    "ConnectionDetails": {
+                      "type": "string"
+                    },
+                    "DatasourceType": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "ConnectionDetails": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "UpdateFeaturedTables": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "State": {
+                "type": "string"
+              },
+              "TableName": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "SharingScope": {
+          "type": "string"
+        },
+        "SingleSignOnType": {
+          "type": "string"
+        },
+        "SnapshotId": {
+          "type": "string"
+        },
+        "DashboardId": {
+          "type": "string"
+        },
+        "DashboardName": {
+          "type": "string"
+        },
+        "DataClassification": {
+          "type": "string"
+        },
+        "DataConnectivityMode": {
+          "type": "string"
+        },
+        "DatasetId": {
+          "type": "string"
+        },
+        "ReportId": {
+          "type": "string"
+        },
+        "ArtifactId": {
+          "type": "string"
+        },
+        "ArtifactName": {
+          "type": "string"
+        },
+        "IsSuccess": {
+          "type": "boolean"
+        },
+        "IsTemplateAppFromMarketplace": {
+          "type": "boolean"
+        },
+        "IsTenantAdminApi": {
+          "type": "boolean"
+        },
+        "IsUpdateAppActivity": {
+          "type": "boolean"
+        },
+        "ReportType": {
+          "type": "string"
+        },
+        "RequiredWorkspaces": {
+          "type": "array",
+          "items": {}
+        },
+        "RequestId": {
+          "type": "string"
+        },
+        "ResultStatus": {
+          "type": "string"
+        },
+        "ActivityId": {
+          "type": "string"
+        },
+        "DistributionMethod": {
+          "type": "string"
+        },
+        "EmbedTokenId": {
+          "type": "string"
+        },
+        "EndPoint": {
+          "type": "string"
+        },
+        "ExcludePersonalWorkspaces": {
+          "type": "string"
+        },
+        "ExportEventEndDateTimeParameter": {
+          "type": "string"
+        },
+        "ExportEventStartDateTimeParameter": {
+          "type": "string"
+        },
+        "Experience": {
+          "type": "string"
+        },
+        "ConsumptionMethod": {
+          "type": "string"
+        },
+        "ContentProviderCertificationStage": {
+          "type": "string"
+        },
+        "CopiedReportId": {
+          "type": "string"
+        },
+        "CopiedReportName": {
+          "type": "string"
+        },
+        "ArtifactObjectId": {
+          "type": "string"
+        },
+        "ArtifactKind": {
+          "type": "string"
+        },
+        "ArtifactType": {
+          "type": "string"
+        },
+        "RefreshEnforcementPolicy": {
+          "type": "number"
+        },
+        "RefreshType": {
+          "type": "number"
+        },
+        "DatasetCertificationStage": {
+          "type": "number"
+        },
+        "WorkspacesModifiedSince": {
+          "type": "number"
+        },
+        "WorkspacesSemicolonDelimitedList": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "continuationUri": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  },
+  "continuationToken": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  },
+  "lastResultSet": {
+    "type": "boolean"
+  },
+  "required": [
+    "activityEventEntities",
+    "continuationUri",
+    "continuationToken",
+    "lastResultSet"
+  ]
+}
