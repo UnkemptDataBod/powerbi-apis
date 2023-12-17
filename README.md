@@ -31,7 +31,7 @@ Generally there is loose parity of feature when the feature has both an administ
 Would welcome contributions
 
 # General resources used
-https://guidgenerator.com/
+https://www.jsongenerator.io/schema
 
 
 # Other useful references
