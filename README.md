@@ -1,6 +1,6 @@
 
 > [!NOTE]  
-> If you contribute please be sure to use the [replaceguids](utils\replaceguids.ps1) script to change any sensitive IDs
+> If you contribute please be sure to use the [replaceguids](/utils/replaceguids.ps1) script to change any sensitive IDs
 
 Power BI has a low barrier of entry......
 It also has a complex underlying model!
