@@ -4,7 +4,7 @@ import json
 import requests
 
 # Define inputs
-outputpath = "scriptoutput/pbi-apis/Admin/Get-Admin-Events/"
+outputpath = "scriptoutput/pbi-apis/Admin/Get-Activity-Events/"
 
 # Create local output directory if not exists
 if not os.path.exists(outputpath):  
