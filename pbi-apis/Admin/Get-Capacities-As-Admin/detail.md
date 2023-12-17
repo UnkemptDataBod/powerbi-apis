@@ -18,7 +18,7 @@ Get-PowerBICapacity -Scope Organization -ShowEncryptionKey
 ```
 
 # Important
-None
+* Capacity Users requires a seperate call to [Capacities GetCapacityUsersAsAdmin](pbi-apis\Admin\Capacities-GetCapacityUsersAsAdmin)
 
 # Issues experienced
 None
