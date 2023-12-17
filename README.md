@@ -1,4 +1,7 @@
 
+> [!NOTE]  
+> If you contribute please be sure to use the (replaceguids script to change any sunsitive IDs)[utils\replaceguids.ps1]
+
 # powerbi-apis
 This is initially to provide a base for schema validation and as a reference for future usage of the APIs. 
 
@@ -28,9 +31,8 @@ Generally there is loose parity of feature when the feature has both an administ
 Would welcome contributions
 
 # General resources used
-https://guidgenerator.com/
-
 https://www.jsongenerator.io/schema
+
 
 # Other useful references
 * [microsoft / powerbi-powershell](https://github.com/microsoft/powerbi-powershell) repo
