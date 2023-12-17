@@ -1,6 +1,6 @@
 
 > [!NOTE]  
-> If you contribute please be sure to use the (replaceguids script to change any sunsitive IDs)[utils\replaceguids.ps1]
+> If you contribute please be sure to use the [replaceguids](utils\replaceguids.ps1) script to change any sunsitive IDs
 
 # powerbi-apis
 This is initially to provide a base for schema validation and as a reference for future usage of the APIs. 
