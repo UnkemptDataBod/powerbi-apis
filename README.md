@@ -60,22 +60,22 @@ erDiagram
 | Topic | Content API | Usage/Interaction | Notes |
 |-|-|-|-|
 | Power BI Service | | | No APIs cover this |
-| Workspace |  <ul><li>[Groups-GetGroupsAsAdmin](/pbi-apis/Admin/Groups-GetGroupsAsAdmin)</li><li>[WorkspaceInfo-GetScanResult](pbi-apis\Admin\WorkspaceInfo-GetScanResult)</li></ul> | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
-| Tenant Settings | <ul><li>[Get-Tenant-Settings](fabric-apis\Get-Tenant-Settings) (Fabric)</li></ul> | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | Activity events DO NOT include details for Include/Exclude groups or delegation changes |
-| Capacity | <ul><li>[Get-Capacities-As-Admin](pbi-apis\Admin\Get-Capacities-As-Admin)</li>  <li>[Capacities GetCapacityUsersAsAdmin](pbi-apis\Admin\Capacities-GetCapacityUsersAsAdmin)</li></ul> | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | Not all capacity events are logged, changes to the capacity settings/admins etc are not returned |
-| App | <ul><li>[Apps-GetAppsAsAdmin](pbi-apis\Admin\Apps-GetAppsAsAdmin)</li></ul> | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) |Content API does not return audience information|
+| Workspace |  <ul><li>[Groups-GetGroupsAsAdmin](/pbi-apis/Admin/Groups-GetGroupsAsAdmin)</li><li>[WorkspaceInfo-GetScanResult](/pbi-apis/Admin/WorkspaceInfo-GetScanResult)</li></ul> | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
+| Tenant Settings | <ul><li>[Get-Tenant-Settings](fabric-apis/Get-Tenant-Settings) (Fabric)</li></ul> | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | Activity events DO NOT include details for Include/Exclude groups or delegation changes |
+| Capacity | <ul><li>[Get-Capacities-As-Admin](/pbi-apis/Admin/Get-Capacities-As-Admin)</li>  <li>[Capacities GetCapacityUsersAsAdmin](/pbi-apis/Admin/Capacities-GetCapacityUsersAsAdmin)</li></ul> | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | Not all capacity events are logged, changes to the capacity settings/admins etc are not returned |
+| App | <ul><li>[Apps-GetAppsAsAdmin](/pbi-apis/Admin/Apps-GetAppsAsAdmin)</li></ul> | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) |Content API does not return audience information|
 | Domain | N/A | N/A | No APIs cover this |
-| Report | <ul><li>[WorkspaceInfo-GetScanResult](pbi-apis\Admin\WorkspaceInfo-GetScanResult)</li></ul> | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | Interactions within the report are not captured in the activity events |
-| Semantic Model | | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
-| Dashboard | | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
-| Dataflow | | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
-| Lakehouse | | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
-| Datamart | | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
-| Warehouse | | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
+| Report | <ul><li>[WorkspaceInfo-GetScanResult](/pbi-apis/Admin/WorkspaceInfo-GetScanResult)</li></ul> | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | Interactions within the report are not captured in the activity events |
+| Semantic Model | | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
+| Dashboard | | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
+| Dataflow | | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
+| Lakehouse | | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
+| Datamart | | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
+| Warehouse | | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
 | Gateway | | | |
-| Scorecard | | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
-| Metric | | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
-| Pipeline | [Pipelines-GetPipelinesAsAdmin](pbi-apis/Admin/Pipelines-GetPipelinesAsAdmin) | [Get-Activity-Events](pbi-apis\Admin\Get-Activity-Events) | |
+| Scorecard | | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
+| Metric | | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
+| Pipeline | [Pipelines-GetPipelinesAsAdmin](pbi-apis/Admin/Pipelines-GetPipelinesAsAdmin) | [Get-Activity-Events](/pbi-apis/Admin/Get-Activity-Events) | |
 | Template App | | | |
 
 # powerbi-apis
